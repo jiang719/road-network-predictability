@@ -144,13 +144,16 @@ class Node2VecTrainer():
 
 
 if __name__ == "__main__":
-    train = DataLoader('E:/python-workspace/CityRoadPrediction/data_20200610/train/')
-    test = DataLoader('E:/python-workspace/CityRoadPrediction/data_20200610/test/')
+    data_dir = 'E:/python-workspace/CityRoadPrediction/'
+    train = DataLoader(data_dir + 'data_20200610/train/')
+    test = DataLoader(data_dir + 'data_20200610/test/')
     for city in train.data:
         if city not in test.data:
             continue
         print(city)
-        tester = Node2VecTester(embed_dim=50, test_data=test, city=city)
+        train.load_dir_datas(city)
+        test.load_dir_datas(city)
+        tester = Node2VecTester(embed_dim=100, test_data=test, city=city)
         trainer = Node2VecTrainer(embed_dim=100, train_data=train, city=city, tester=tester)
         trainer.prepare_train_embedding()
         #trainer.train_distmult()
