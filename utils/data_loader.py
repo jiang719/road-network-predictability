@@ -10,14 +10,15 @@ class DataLoader():
         self.data_dir = data_dir
         self.data = {}
         self.ids = []
-        self.load_dir_datas()
 
-    def load_dir_datas(self):
+    def load_dir_datas(self, cityname):
         files = os.listdir(self.data_dir)
         for file in files:
             name = file[:-5]
             number = re.findall('[0-9]+', name)[0]
             city, attr = name.split(number)
+            if city != cityname:
+                continue
             id1 = city + '_' + number + '_1'
             id2 = city + '_' + number + '_2'
             if city not in self.data:

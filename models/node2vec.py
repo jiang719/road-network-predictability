@@ -2,7 +2,7 @@ from GraphEmbedding.ge.models import node2vec
 
 
 class Node2Vec():
-    def __init__(self, walk_length=15, num_walks=200, p=0.25, q=4, workers=1):
+    def __init__(self, walk_length=15, num_walks=200, p=0.25, q=4, workers=2):
         self.walk_length = walk_length
         self.num_walks = num_walks
         self.p = p
@@ -16,7 +16,7 @@ class Node2Vec():
             p=self.p, q=self.q, workers=self.workers
         )
 
-    def train(self, embed_size=50, window_size=5, iter=20):
+    def train(self, embed_size=50, window_size=5, iter=10):
         assert self.model is not None
         self.model.train(embed_size, window_size, iter)
         return self.model.get_embeddings()
