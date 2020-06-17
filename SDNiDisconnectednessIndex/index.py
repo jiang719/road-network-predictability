@@ -66,7 +66,7 @@ def visualization(nodeInfor, predictEdges, oldEdges, newEdges):
         for end in oldEdges[start]:
             num = num + 1
             Graph1.add_edge(str(start), str(end), color='black', weight=1)
-    print('old num', num)
+    # print('old num', num)
     for start in newEdges:
         for end in newEdges[start]:
             if (not (start in predictEdges and end in predictEdges[start])) and \
@@ -83,7 +83,7 @@ def visualization(nodeInfor, predictEdges, oldEdges, newEdges):
     edges = Graph1.edges()
     colors = [Graph1[u][v]['color'] for u, v in edges]
     weights = [Graph1[u][v]['weight'] for u, v in edges]
-    print(nx.cycle_basis(Graph1))
+    # print(nx.cycle_basis(Graph1))
     print("node number", len(Graph1.nodes))
     print("edge number", len(Graph1.edges))
     plt.figure(1, figsize=(6, 6))
@@ -190,37 +190,93 @@ def Bridge(nodes, old_edges):
     nodes_id_to_idx = {}
     for i, v in enumerate(nodes_list):
         nodes_id_to_idx[v] = i
+
+    ######### find the total edges
     edges_count = 0
     for node_name in old_edges:
         for node_name_neighbour in old_edges[node_name]:
             graph.addEdge(nodes_id_to_idx[node_name], nodes_id_to_idx[node_name_neighbour])
             edges_count += 1
+
+    ######## find all bridges and dead-ends
     graph.bridge()
-    print(len(graph.bridges), edges_count)
+    bridge_bool = np.zeros(len(graph.bridges))
+    ### classify the node as bridge or dead-end (has a node with degree 1)
+    edges_degree_dict = {}
+    for dict_name in old_edges:
+        if dict_name not in edges_degree_dict:
+            edges_degree_dict[dict_name] = 0
+        for v in old_edges[dict_name]:
+            if v not in edges_degree_dict:
+                edges_degree_dict[v] = 0
+    for dict_name in old_edges:
+        for v in old_edges[dict_name]:
+            edges_degree_dict[dict_name] += 1
+            edges_degree_dict[v] += 1
+
+    for idx, edge in enumerate(graph.bridges):
+        # print(nodes_list[edge[0]], edges_degree_dict[nodes_list[edge[0]]])
+        if edges_degree_dict[nodes_list[edge[0]]] == 1 or edges_degree_dict[nodes_list[edge[1]]] == 1:
+            bridge_bool[idx] = 0
+        else:
+            bridge_bool[idx] = 1
+
+    frac_edge_bridges = sum(bridge_bool)/float(edges_count)
+    frac_edge_deadends = sum(1 - bridge_bool)/float(edges_count)
+
+    ####### find all edges length
+    length_sum = 0
+    for node_name in old_edges:
+        for node_name_neighbour in old_edges[node_name]:
+            point1 = nodes_dict[node_name]
+            point2 = nodes_dict[node_name_neighbour]
+            distance = math.sqrt((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2)
+            length_sum =  length_sum + distance
+
+    length_sum_bridge = 0
+    length_sum_deadend = 0
+
+    for idx, edge in enumerate(graph.bridges):
+        point1 = nodes_dict[nodes_list[edge[0]]]
+        point2 = nodes_dict[nodes_list[edge[1]]]
+        distance = math.sqrt((point1[0] - point2[0]) ** 2 + (point1[1] - point2[1]) ** 2)
+        if bridge_bool[idx] == 1:
+            length_sum_bridge = length_sum_bridge + distance
+        else:
+            length_sum_deadend = length_sum_deadend + distance
+
+    frac_length_bridges = length_sum_bridge / length_sum
+    frac_length_deadend = length_sum_deadend / length_sum
+    # for idx, edge in enumerate(graph.bridges):
+    #     print(nodes_list[edge[0]], nodes_list[edge[1]], bridge_bool[idx])
     # print('hehe', graph.bridges)
     # for v in graph.bridges:
     #     print(nodes_list[v[0]], nodes_list[v[1]])
-    return len(graph.bridges)/float(edges_count)
-
+    # return len(graph.bridges)/float(edges_count)
+    return frac_edge_bridges, frac_edge_deadends, frac_length_bridges, frac_length_deadend
 
 if __name__ == '__main__':
-    file_name = 'Wichita10'#'Arlington0'##''Albuquerque7'#'Chicago0'
+    file_name = 'Arlington0'#'Wichita10'#'Arlington0'##''Albuquerque7'#'Chicago0'
     sample = 1
     nodes, old_edges= load_graph(file_name, sample)
     '''
     check the uniqueness expression
     '''
-    # count = 0
-    # for dict_name in old_edges:
-    #     for v in old_edges[dict_name]:
-    #         if v in old_edges:
-    #             if dict_name in old_edges[v]:
-    #                 count+=1
-    # print(count)
+    index_dict = {}
+
     # ############ neg_avg_degree
-    # neg_avg_degree(old_edges)
+    index_dict['neg_degree'] = neg_avg_degree(old_edges)
+    index_dict['log_circuity_0p003_0p006'] = LogCircuity(nodes, old_edges, 0.003, 0.006)
+
+    frac_edge_bridges, frac_edge_deadends, frac_length_bridges, frac_length_deadend = Bridge(nodes, old_edges)
+
+    index_dict['frac_edge_bridges'] = frac_edge_bridges
+    index_dict['frac_edge_deadends'] = frac_edge_deadends
+    index_dict['frac_length_bridges'] = frac_length_bridges
+    index_dict['frac_length_deadend'] = frac_length_deadend
+
+    print(index_dict)
     # ############
     # LogCircuity(nodes, old_edges, 0.003, 0.006)
-    print('Bridges', Bridge(nodes, old_edges))
     # visualize the graph
     visualization(nodes_to_list(nodes), dict(), old_edges, dict())
