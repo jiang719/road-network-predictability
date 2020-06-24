@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import json
 import math
+import glob
 
 def nodes_to_list(nodes):
     new_nodes = []
@@ -180,7 +181,10 @@ def LogCircuity(nodes, old_edges, r1, r2):
     sum_network_path = np.sum(shortest_path_distance_matrix * between_r1_r2)
     # print(sum_network_path, sum_straight_line)
     # print(np.log10(sum_network_path) - np.log10(sum_straight_line))
-    return np.log10(sum_network_path) - np.log10(sum_straight_line)
+    if sum_network_path ==0 or sum_straight_line ==0:
+        return 0
+    else:
+        return np.log10(sum_network_path) - np.log10(sum_straight_line)
 
 def Bridge(nodes, old_edges):
     from Bridges import Graph
@@ -255,10 +259,9 @@ def Bridge(nodes, old_edges):
     # return len(graph.bridges)/float(edges_count)
     return frac_edge_bridges, frac_edge_deadends, frac_length_bridges, frac_length_deadend
 
-if __name__ == '__main__':
-    file_name = 'Arlington0'#'Wichita10'#'Arlington0'##''Albuquerque7'#'Chicago0'
+def index_city(city_name, visualize = False):
     sample = 1
-    nodes, old_edges= load_graph(file_name, sample)
+    nodes, old_edges = load_graph(city_name, sample)
     '''
     check the uniqueness expression
     '''
@@ -266,7 +269,9 @@ if __name__ == '__main__':
 
     # ############ neg_avg_degree
     index_dict['neg_degree'] = neg_avg_degree(old_edges)
-    index_dict['log_circuity_0p003_0p006'] = LogCircuity(nodes, old_edges, 0.003, 0.006)
+
+    index_dict['log_circuity_0_0p005'] = LogCircuity(nodes, old_edges, 0.0, 0.005)
+    index_dict['log_circuity_0p005_0p02'] = LogCircuity(nodes, old_edges, 0.005, 0.02)
 
     frac_edge_bridges, frac_edge_deadends, frac_length_bridges, frac_length_deadend = Bridge(nodes, old_edges)
 
@@ -275,8 +280,37 @@ if __name__ == '__main__':
     index_dict['frac_length_bridges'] = frac_length_bridges
     index_dict['frac_length_deadend'] = frac_length_deadend
 
-    print(index_dict)
+    # print(index_dict)
+    #
+    # with open('data.txt', 'w') as outfile:
+    #     json.dump(index_dict, outfile)
+
     # ############
     # LogCircuity(nodes, old_edges, 0.003, 0.006)
     # visualize the graph
-    visualization(nodes_to_list(nodes), dict(), old_edges, dict())
+    if visualize:
+        visualization(nodes_to_list(nodes), dict(), old_edges, dict())
+    return index_dict
+
+if __name__ == '__main__':
+    # city_name = 'Wichita10'#'Arlington0'#'Arlington0'##''Albuquerque7'#'Chicago0'
+    # print(index_city(city_name, True))
+    file_list = glob.glob('../data_20200610/train/*edges.json')
+    '''
+    use in window
+    '''
+    name_list = []
+    max_distance = 0
+    for file_name in file_list:
+        name_list.append((file_name.split('\\')[-1]).split('edges.json')[0])
+
+    all_city_index = {}
+    for idx, city in enumerate(name_list):
+        print('{}/{} city: {}'.format(idx, len(name_list), city))
+        all_city_index[city] = index_city(city)
+    # all_city_index[name_list[0]] = index_city(name_list[0])
+    # all_city_index[name_list[1]] = index_city(name_list[1])
+    # print(all_city_index)
+    with open('training_set_index.txt', 'w') as outfile:
+        json.dump(all_city_index, outfile)
+
