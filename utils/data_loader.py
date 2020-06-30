@@ -10,6 +10,26 @@ class DataLoader():
         self.data_dir = data_dir
         self.data = {}
         self.ids = []
+        self.cities = set()
+        self.load_cities()
+
+    def load_cities(self):
+        files = os.listdir(self.data_dir)
+        for file in files:
+            name = file[:-5]
+            number = re.findall('[0-9]+', name)[0]
+            city, attr = name.split(number)
+            if city not in self.cities:
+                self.cities.add(city)
+        self.cities = list(self.cities)
+
+    def load_all_datas(self):
+        for city in self.cities:
+            self.load_dir_datas(city)
+
+    def initialize(self):
+        self.data = {}
+        self.ids = []
 
     def load_dir_datas(self, cityname):
         files = os.listdir(self.data_dir)

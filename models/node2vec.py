@@ -2,7 +2,7 @@ from GraphEmbedding.ge.models import node2vec
 
 
 class Node2Vec():
-    def __init__(self, walk_length=15, num_walks=200, p=0.25, q=4, workers=2):
+    def __init__(self, walk_length=15, num_walks=200, p=0.25, q=4, workers=4):
         self.walk_length = walk_length
         self.num_walks = num_walks
         self.p = p
