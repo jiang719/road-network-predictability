@@ -9,6 +9,9 @@ from sklearn.cluster import KMeans
 import os
 from scipy.spatial.distance import cdist
 from sklearn.metrics import f1_score
+from sklearn import linear_model
+import scipy
+
 font1 = {'family' : 'Arial',
 'weight' : 'normal',
 'size'   : 23,
@@ -460,6 +463,172 @@ def city_ratio(k):
     # plt.savefig('figure2_2.svg', bbox_inches='tight')
     plt.tight_layout()
     plt.show()
+
+def city_ratio_all(k):
+    with open('training_set_index.txt') as json_file:
+        city_index = json.load(json_file)
+    data = np.zeros((len(city_index), 11))
+    num_2_cityname = {}
+    cityName = []
+    for city_num, city in enumerate(city_index):
+        num_2_cityname[city_num] = city
+        for idx_num, attribute in enumerate(city_index[city]):
+            data[city_num, idx_num] = city_index[city][attribute]
+        city_tmp = city
+        for i in range(10):
+            city_tmp = city_tmp.replace(str(i), '')
+        if city_tmp not in cityName:
+            cityName.append(city_tmp)
+    print('data shape: ', data.shape)
+    print(cityName)
+    data_mean = np.mean(data, axis=0, keepdims=True)
+    data_std = np.std(data, axis=0, keepdims=True)
+    data = (data - data_mean)/data_std
+
+    k = k
+
+    kmeanModel = KMeans(n_clusters= k, random_state = 1)
+    kmeanModel.fit(data)
+
+    pca = PCA(n_components=2)
+    newData = pca.fit_transform(data)
+
+    change_order = True
+
+    # if change_order:
+    #     SDNi = np.zeros(k)
+    #     for i in range(k):
+    #         SDNi[i] = np.mean(newData[kmeanModel.labels_ == i][:, 0])
+    #     argsorted_SDNi = np.argsort(SDNi)
+    #     print(SDNi)
+    #     for i in range(len(kmeanModel.labels_)):
+    #         kmeanModel.labels_[i] = argsorted_SDNi[kmeanModel.labels_[i]]
+
+    if change_order:
+        SDNi = np.zeros(k)
+        change_order_mapping = {}
+        for i in range(k):
+            SDNi[i] = np.mean(newData[kmeanModel.labels_== i][:,0])
+        argsorted_SDNi = np.argsort(SDNi)
+        for i in range(k):
+            change_order_mapping[i] = np.where(argsorted_SDNi==i)[0][0]
+        for i in range(len(kmeanModel.labels_)):
+            kmeanModel.labels_[i] = change_order_mapping[kmeanModel.labels_[i]]
+
+    count = {}
+    for idx, label in enumerate(kmeanModel.labels_):
+        # if 'New york' in num_2_cityname[idx]:
+        #     if 'New york' not in count:
+        #         count['New york'] = []
+        #     count['New york'].append(label)
+        # if 'Los angeles' in num_2_cityname[idx]:
+        #     if 'Los angeles' not in count:
+        #         count['Los angeles'] = []
+        #     count['Los angeles'].append(label)
+        # if 'Chicago' in num_2_cityname[idx]:
+        #     if 'Chicago' not in count:
+        #         count['Chicago'] = []
+        #     count['Chicago'].append(label)
+        # if 'Houston' in num_2_cityname[idx]:
+        #     if 'Houston' not in count:
+        #         count['Houston'] = []
+        #     count['Houston'].append(label)
+        # if 'Philadelphia' in num_2_cityname[idx]:
+        #     if 'Philadelphia' not in count:
+        #         count['Philadelphia'] = []
+        #     count['Philadelphia'].append(label)
+        # if 'Phoenix' in num_2_cityname[idx]:
+        #     if 'Phoenix' not in count:
+        #         count['Phoenix'] = []
+        #     count['Phoenix'].append(label)
+        # if 'San diego' in num_2_cityname[idx]:
+        #     if 'San diego' not in count:
+        #         count['San diego'] = []
+        #     count['San diego'].append(label)
+        # if 'San antonio' in num_2_cityname[idx]:
+        #     if 'San antonio' not in count:
+        #         count['San antonio'] = []
+        #     count['San antonio'].append(label)
+        # if 'Dallas' in num_2_cityname[idx]:
+        #     if 'Dallas' not in count:
+        #         count['Dallas'] = []
+        #     count['Dallas'].append(label)
+        # if 'Detroit' in num_2_cityname[idx]:
+        #     if 'Detroit' not in count:
+        #         count['Detroit'] = []
+        #     count['Detroit'].append(label)
+        for city_name in cityName:
+            if city_name in num_2_cityname[idx]:
+                if city_name not in count:
+                    count[city_name] = []
+                count[city_name].append(label)
+    # print(np.sum(np.array(count['Detroit'])==0))
+
+    ratio = {}
+    for city in count:
+        if city not in ratio:
+            ratio[city] = np.zeros(k)
+        for i in range(k):
+            ratio[city][i] = np.sum(np.array(count[city])==i)
+        ratio[city] = ratio[city]/np.sum(ratio[city])
+    # print(ratio)
+
+    # cityName = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Philadelphia', 'Phoenix', 'San diego', 'San antonio',
+    #             'Dallas', 'Detroit']
+    category_names = ['T ' + str(i + 1) for i in range(6)]
+    # print(category_names)
+    r1 = [10.0, 15.0, 17.0, 32.0, 26.0]
+    r2 = [20.0, 15.0, 17.0, 32.0, 26.0]
+    r3 = [30.0, 15.0, 17.0, 32.0, 26.0]
+    r4 = [40.0, 15.0, 17.0, 32.0, 26.0]
+    r5 = [50.0, 15.0, 17.0, 32.0, 26.0]
+
+    # results = {
+    #     cityName[0]: ratio['New york'],
+    #     cityName[1]: ratio['Los angeles'],
+    #     cityName[2]: ratio['Chicago'],
+    #     cityName[3]: ratio['Houston'],
+    #     cityName[4]: ratio['Philadelphia'],
+    #     cityName[5]: ratio['Phoenix'],
+    #     cityName[6]: ratio['San diego'],
+    #     cityName[7]: ratio['San antonio'],
+    #     cityName[8]: ratio['Dallas'],
+    #     cityName[9]: ratio['Detroit'],
+    # }
+    results = {}
+    for i in range(len(cityName)):
+        results[cityName[i]] = ratio[cityName[i]]
+    # step 2: figure, label
+    labels = list(results.keys())
+    data = np.array(list(results.values()))
+    data_cum = data.cumsum(axis=1)
+    # category_colors = plt.get_cmap('RdYlGn')(np.linspace(0.1, 1.0, data.shape[1]))
+    category_colors = ['pink', 'lightblue', 'lightgreen', 'lightyellow', 'lightsalmon']
+    fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(8, 15))#, dpi=1200)
+
+    ax.invert_yaxis()
+    ax.xaxis.set_visible(False)
+    ax.set_xlim(0, np.sum(data, axis=1).max())
+
+    for i, (colname, color) in enumerate(zip(category_names, category_colors)):
+        if i>=k:
+            break
+        widths = data[:, i]
+        starts = data_cum[:, i] - widths
+        ax.barh(labels, width = widths, left=starts, height=0.85, label=colname, color=color, edgecolor="black")
+        xcenters = starts + widths / 2
+        # r, g, b, _ = color
+        text_color = 'black'
+        for y, (x, c) in enumerate(zip(xcenters, widths)):
+            # ax.text(x, y, str(round(c, 2)), ha='center', va='center', color=text_color, fontsize=12)
+            ax.text(x, y, '{}%'.format(int(round(c*100))), ha='center', va='center', color=text_color, fontsize=12)
+    ax.legend(ncol=len(category_names), bbox_to_anchor=(0, 1), loc='lower left', fontsize=16)
+    plt.yticks(fontsize=16)#, rotation=45)
+    plt.tight_layout()
+    # plt.savefig('figure2_2.pdf', bbox_inches='tight')
+    plt.savefig('figure2_2.png', bbox_inches='tight')
+    # plt.tight_layout()
+    # plt.show()
 
 def f1():
     file_list = glob.glob('../relational_gcn_0717/final/*.json')
@@ -961,14 +1130,14 @@ def f1_vs_city_all(k):
     # cityName = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Philadelphia', 'Phoenix', 'San diego', 'San antonio',
     #             'Dallas', 'Detroit']
     # step 2: figure
-    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 20))#, dpi=1200)
+    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 13))#, dpi=1200)
     bplot1 = ax1.boxplot(all_data,
                          vert=False,  # vertical box alignment
                          patch_artist=True,  # fill with color
                          labels=cityName)  # will be used to label x-ticks
     ax1.set_title("F1 scores for different cities", font1, fontsize=20)
     # ax1.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
-    plt.yticks(fontsize=12)
+    plt.yticks(fontsize=13)
     plt.xticks(fontsize=16)
     # # step 3: color
     colors = ['pink', 'lightblue', 'lightgreen', 'lightyellow', 'lightsalmon', 'pink', 'lightblue', 'lightgreen',
@@ -1073,10 +1242,174 @@ def pca_visualize_center(k):
     plt.tight_layout()
     plt.show()
 
+def f1_vs_PCA1():
+    with open('training_set_index.txt') as json_file:
+        city_index = json.load(json_file)
+    data = np.zeros((len(city_index), 11))
+    num_2_cityname = {}
+    for city_num, city in enumerate(city_index):
+        num_2_cityname[city_num] = city
+        for idx_num, attribute in enumerate(city_index[city]):
+            data[city_num, idx_num] = city_index[city][attribute]
+    print('data shape: ', data.shape)
+
+    data_mean = np.mean(data, axis=0, keepdims=True)
+    data_std = np.std(data, axis=0, keepdims=True)
+    data = (data - data_mean)/data_std
+
+    with open('test_set_index.txt') as json_file:
+        city_index = json.load(json_file)
+    test_data = np.zeros((len(city_index), 11))
+    test_num_2_cityname = {}
+    for city_num, city in enumerate(city_index):
+        test_num_2_cityname[city_num] = city
+        for idx_num, attribute in enumerate(city_index[city]):
+            test_data[city_num, idx_num] = city_index[city][attribute]
+    print('test data shape: ', test_data.shape)
+
+    test_data = (test_data - data_mean)/data_std
+
+    pca = PCA(n_components=6)
+    newData = pca.fit_transform(data)
+    # print(np.sum(np.abs(np.matmul(data,np.transpose(pca.components_))-newData)))
+    test_newData = np.matmul(test_data,np.transpose(pca.components_))
+
+    test_result = json.load(open('f1_score_test_result.json', 'r'))
+    test_result_ = {}
+    for city in test_result:
+        for city_name in test_result[city]:
+            new_city_name = city_name.split('_')[0]+city_name.split('_')[1]+'_'+city_name.split('_')[2]
+            test_result_[new_city_name] = test_result[city][city_name]
+    # print(test_result_)
+    # print(test_result_[test_num_2_cityname[0]+'_2'])
+    f1_score = np.zeros(test_newData.shape[0])
+    for i in range(test_newData.shape[0]):
+        f1_score[i] = (test_result_[test_num_2_cityname[i]+'_1']+test_result_[test_num_2_cityname[i]+'_2'])/2
+
+    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 7))
+    plt.scatter(test_newData[:,0], f1_score, s = 3, label = 'road network')
+
+    print('pearson corre:', scipy.stats.pearsonr(test_newData[:,0], f1_score))
+    print('testing pearson corre:', scipy.stats.pearsonr([1,2,3,4,5], [1,2,3,4,7]))
+
+    # Create linear regression object
+    regr = linear_model.LinearRegression()
+    # Train the model using the training sets
+    regr.fit(test_newData[:,0].reshape(-1, 1), np.reshape(f1_score,(-1,1)))
+
+    test_X = np.arange(test_newData[:,0].min(), test_newData[:,0].max(), 0.05).reshape(-1, 1)
+    # Make predictions using the testing set
+    test_y_pred = regr.predict(test_X)
+
+    plt.plot(test_X, test_y_pred, linewidth = 3, label = 'linear regression', color = 'r')
+    # plt.plot(newData[kmeanModel.labels_== 4][:,0], newData[kmeanModel.labels_== 4][:,1], 'o', markersize=3, label="Type 5")
+    # ax1.set_xticks([-4, -2, 0, 2, 4])
+    # ax1.set_yticks([-4, -2, 0, 2, 4])
+    ax1.set_title("PCA1 vs f1", font1, fontsize=20)
+    plt.yticks(fontsize=22)
+    plt.xticks(fontsize=22)
+    plt.xlabel('PCA1', font1)
+    plt.ylabel('f1', font1)
+    plt.legend(loc="upper right", fontsize=14, markerscale=3.)
+    plt.grid(True)
+    # plt.savefig('figure2_6.pdf', bbox_inches='tight')
+    # plt.savefig('figure2_6.svg', bbox_inches='tight')
+    plt.tight_layout()
+    plt.show()
+
+def f1_vs_PCA1_city():
+    with open('training_set_index.txt') as json_file:
+        city_index = json.load(json_file)
+    data = np.zeros((len(city_index), 11))
+    num_2_cityname = {}
+    for city_num, city in enumerate(city_index):
+        num_2_cityname[city_num] = city
+        for idx_num, attribute in enumerate(city_index[city]):
+            data[city_num, idx_num] = city_index[city][attribute]
+    print('data shape: ', data.shape)
+
+    data_mean = np.mean(data, axis=0, keepdims=True)
+    data_std = np.std(data, axis=0, keepdims=True)
+    data = (data - data_mean)/data_std
+
+    with open('test_set_index.txt') as json_file:
+        city_index = json.load(json_file)
+    test_data = np.zeros((len(city_index), 11))
+    test_num_2_cityname = {}
+    for city_num, city in enumerate(city_index):
+        test_num_2_cityname[city_num] = city
+        for idx_num, attribute in enumerate(city_index[city]):
+            test_data[city_num, idx_num] = city_index[city][attribute]
+    print('test data shape: ', test_data.shape)
+
+    test_data = (test_data - data_mean)/data_std
+
+    pca = PCA(n_components=6)
+    newData = pca.fit_transform(data)
+    # print(np.sum(np.abs(np.matmul(data,np.transpose(pca.components_))-newData)))
+    test_newData = np.matmul(test_data,np.transpose(pca.components_))
+
+    test_result = json.load(open('f1_score_test_result.json', 'r'))
+    test_result_ = {}
+    cityName = []
+    for city in test_result:
+        for city_name in test_result[city]:
+            new_city_name = city_name.split('_')[0]+city_name.split('_')[1]+'_'+city_name.split('_')[2]
+            test_result_[new_city_name] = test_result[city][city_name]
+        cityName.append(city)
+
+    test_result_f1_cities = {}
+    test_result_pca_cities = {}
+    for city in cityName:
+        if city not in test_result_f1_cities:
+            test_result_f1_cities[city] = []
+        if city not in test_result_pca_cities:
+            test_result_pca_cities[city] = []
+        for i in range(test_newData.shape[0]):
+            if city in test_num_2_cityname[i]:
+                f1_score = (test_result_[test_num_2_cityname[i]+'_1']+test_result_[test_num_2_cityname[i]+'_2'])/2
+                test_result_f1_cities[city].append(f1_score)
+                test_result_pca_cities[city].append(test_newData[i,0])
+
+
+    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 7))
+    for city in test_result_f1_cities:
+        # print(city, len(test_result_pca_cities[city]), len(test_result_f1_cities[city]))
+        # print(np.array(test_result_pca_cities[city]).shape, np.array(test_result_f1_cities[city]).shape)
+        plt.scatter(np.array(test_result_pca_cities[city]), np.array(test_result_f1_cities[city]), s = 3, label = city)
+
+
+    # # Create linear regression object
+    # regr = linear_model.LinearRegression()
+    # # Train the model using the training sets
+    # regr.fit(test_newData[:,0].reshape(-1, 1), np.reshape(f1_score,(-1,1)))
+    #
+    # test_X = np.arange(test_newData[:,0].min(), test_newData[:,0].max(), 0.05).reshape(-1, 1)
+    # # Make predictions using the testing set
+    # test_y_pred = regr.predict(test_X)
+    #
+    # plt.plot(test_X, test_y_pred, linewidth = 3, label = 'linear regression', color = 'r')
+
+    ax1.set_title("PCA1 vs f1", font1, fontsize=20)
+    plt.yticks(fontsize=22)
+    plt.xticks(fontsize=22)
+    plt.xlabel('PCA1', font1)
+    plt.ylabel('f1', font1)
+    # plt.legend(loc="upper right", fontsize=14, markerscale=3.)
+    plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05),
+              ncol=5, fancybox=True, shadow=True,  fontsize=14, markerscale=3.)
+    plt.grid(True)
+    # plt.savefig('figure2_6.pdf', bbox_inches='tight')
+    # plt.savefig('figure2_6.svg', bbox_inches='tight')
+    plt.tight_layout()
+    plt.show()
+
+
 if __name__ == '__main__':
     if not os.path.isdir('figures'):
         os.mkdir('figures')
     # city_ratio(k = 4)
+    # city_ratio_all(k = 4)
     # pca_visualize(k = 4)
     # pca_visualize_center(k=4)
     # elbow()
@@ -1084,4 +1417,6 @@ if __name__ == '__main__':
     # f1_vs_network_type(4)
     # f1_vs_city(4)
     # visualize('Chicago_145', 0)
-    f1_vs_city_all(4)
+    # f1_vs_city_all(4)
+    f1_vs_PCA1()
+    # f1_vs_PCA1_city()
