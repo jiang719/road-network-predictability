@@ -18,3 +18,4 @@ This part is the implementation of road network classification and predictabilit
 ```
  python measures.py --mode test
 ```
+The results will be saved in 'RoadClassification/results'
