@@ -205,8 +205,8 @@ def elbow():
     plt.tight_layout()
     plt.show()
 
-def pca_visualize(k, save_figures_near =True):
-    with open('training_set_index.txt') as json_file:
+def pca_visualize(k):
+    with open('results/training_set_index.txt') as json_file:
         city_index = json.load(json_file)
     data = np.zeros((len(city_index), 11))
     num_2_cityname = {}
@@ -233,7 +233,6 @@ def pca_visualize(k, save_figures_near =True):
     print('explained variance', pca.explained_variance_)
     print('explained variance ratio', pca.explained_variance_ratio_)
 
-
     # the index of cluster is ordered by the value of PCA1
     change_order = True
     if change_order:
@@ -253,47 +252,20 @@ def pca_visualize(k, save_figures_near =True):
 
     pair_distance = cdist(data, cluster_centers_, 'euclidean')
 
-    near_center_points = {}
-
-    for cluster in range(k):
-        if cluster not in near_center_points:
-            near_center_points[cluster] = []
-        # print(np.argsort(pair_distance[:, 0]), pair_distance[1110, 0], pair_distance[1177, 0])
-        sort_idx = np.argsort(pair_distance[:, cluster])
-        for pts_number in range(10):
-            idx = sort_idx[pts_number]
-            print(num_2_cityname[idx], kmeanModel.labels_[idx], data[idx])
-            near_center_points[cluster].append(num_2_cityname[idx])
-        # for idx, city_name in enumerate(near_center_points[cluster]):
-        #     visualize(city_name, cluster, idx)
-        # for idx, city_name in enumerate(near_center_points[cluster]):
-        #     visualize(city_name, cluster, idx, False)
-    # print(near_center_points[0])
-
-    # for idx, label in enumerate(kmeanModel.labels_):
-    #     print(label, num_2_cityname[idx])
-    #     visualize(num_2_cityname[idx], label)
-
-    # print(newData[kmeanModel.labels_== 1])
-    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 7), dpi = 1200)
+    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 7))#, dpi = 1200)
     plt.plot(newData[kmeanModel.labels_== 0][:,0], newData[kmeanModel.labels_== 0][:,1], 'o', markersize=3, label="Type 1")
     plt.plot(newData[kmeanModel.labels_== 1][:,0], newData[kmeanModel.labels_== 1][:,1], 'o', markersize=3, label="Type 2")
     plt.plot(newData[kmeanModel.labels_== 2][:,0], newData[kmeanModel.labels_== 2][:,1], 'o', markersize=3, label="Type 3")
     plt.plot(newData[kmeanModel.labels_== 3][:,0], newData[kmeanModel.labels_== 3][:,1], 'o', markersize=3, label="Type 4")
-    # plt.plot(newData[kmeanModel.labels_== 4][:,0], newData[kmeanModel.labels_== 4][:,1], 'o', markersize=3, label="Type 5")
-    # ax1.set_xticks([-4, -2, 0, 2, 4])
-    # ax1.set_yticks([-4, -2, 0, 2, 4])
-    # ax1.set_title("2 dimension PCA plot", font1, fontsize=20)
+
     plt.yticks(fontsize=22)
     plt.xticks(fontsize=22)
     plt.xlabel('Dimension 1', font1)
     plt.ylabel('Dimension 2', font1)
     plt.legend(loc="best", fontsize=21.3, markerscale=3., labelspacing = 0.2, borderpad = 0.25)
     plt.tight_layout()
-    # plt.grid(True)
-    plt.savefig('main_text/pca.pdf', bbox_inches='tight')
-    plt.savefig('main_text/pca.svg', bbox_inches='tight')
-    # plt.show()
+    plt.savefig('figures/pca.png', bbox_inches='tight')
+    plt.show()
 
 def city_ratio(k):
     with open('results/training_set_index.txt') as json_file:
@@ -1300,7 +1272,6 @@ def f1_vs_PCA1_test():
     # plt.tight_layout()
     # plt.show()
 
-
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='get the measures for networks')
@@ -1309,6 +1280,9 @@ if __name__ == '__main__':
 
     if not os.path.isdir('figures'):
         os.mkdir('figures')
+
+    if args.mode == 'pca_visualize':
+        pca_visualize(k=4)
 
     if args.mode == 'city_ratio':
         city_ratio(k=4)

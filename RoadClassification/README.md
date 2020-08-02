@@ -21,7 +21,11 @@ This part is the implementation of road network classification and predictabilit
 The results will be saved in the directory 'RoadClassification/results'
 
 ## Visualization
-To see the ratio of different road types in a city, 
+* We classify the road into 4 types, and visualize via PCA, and you can get the Fig. ()
+```
+ python kmean_pca_analysis.py --mode pca_visualize
+```
+* To see the ratio of different road types in a city, you can get the Fig. (1)
 ```
  python kmean_pca_analysis.py --mode city_ratio
 ```
