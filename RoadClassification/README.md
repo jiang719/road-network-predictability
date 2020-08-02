@@ -23,7 +23,7 @@ The results will be saved in the directory 'RoadClassification/results'
 ## Visualization
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="500" height="500">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="800" height="500">
 </p>
 
 * To see F1 value vs. cities, and you can get the Fig. (1)
