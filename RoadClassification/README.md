@@ -26,7 +26,7 @@ The results will be saved in the directory 'RoadClassification/results'
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="800" height="550">
 </p>
 
-* To see F1 value vs. cities as Fig. (1), you can get the command 123
+* To see F1 value vs. cities as Fig. (1), you can run the command
 ```
  python kmean_pca_analysis.py --mode f1_vs_city
 ```
@@ -34,19 +34,19 @@ The results will be saved in the directory 'RoadClassification/results'
 ```
  python kmean_pca_analysis.py --mode pca_visualize
 ```
-* To see the center point of each road type, refer to Fig. (3)
+* To see the center point of each road type as Fig. (3), you can run the command
 ```
  python kmean_pca_analysis.py --mode center
 ```
-* To see the road type distribution in a city, refer Fig. (4)
+* To see the road type distribution in a city as Fig. (4), you can run the command
 ```
  python kmean_pca_analysis.py --mode city_ratio
 ```
-* To find out the f1 value vs. road network types, you can get the Fig. (5)
+* To find out the f1 value vs. road network types as Fig. (5), you can run the command
 ```
  python kmean_pca_analysis.py --mode f1_vs_type
 ```
-* To see the f1 value vs. PCA1, you can get the Fig. (6)
+* To see the f1 value vs. PCA1 as Fig. (6), you can run the command
 ```
  python kmean_pca_analysis.py --mode f1_vs_PCA1
 ```
