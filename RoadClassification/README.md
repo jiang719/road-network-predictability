@@ -22,6 +22,7 @@ This part is the implementation of road network classification and predictabilit
 The results will be saved in the directory 'RoadClassification/results'
 
 ## Visualization
+We summarize the visualization results as below. 
 
 <p align="center">
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="800" height="550">
