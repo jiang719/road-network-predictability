@@ -19,3 +19,9 @@ This part is the implementation of road network classification and predictabilit
  python measures.py --mode test
 ```
 The results will be saved in the directory 'RoadClassification/results'
+
+## Visualization
+To see the ratio of different road types in a city, 
+```
+ python kmean_pca_analysis.py --mode city_ratio
+```
