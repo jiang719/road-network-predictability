@@ -6,6 +6,7 @@ This part is the implementation of road network classification and predictabilit
 * Network predictability vs. principle component of aggregated measures
 
 ## Requirements
+* Window system
 * python 3.6
 * networkx 2.1
 
@@ -26,7 +27,7 @@ The results will be saved in the directory 'RoadClassification/results'
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="800" height="550">
 </p>
 
-* To see F1 value vs. cities as Fig. (1), you can run the command
+* To get F1 value vs. cities as Fig. (1), you can run the command
 ```
  python kmean_pca_analysis.py --mode f1_vs_city
 ```
@@ -34,19 +35,19 @@ The results will be saved in the directory 'RoadClassification/results'
 ```
  python kmean_pca_analysis.py --mode pca_visualize
 ```
-* To see the center point of each road type as Fig. (3), you can run the command
+* To get the center point of each road type as Fig. (3), you can run the command
 ```
  python kmean_pca_analysis.py --mode center
 ```
-* To see the road type distribution in a city as Fig. (4), you can run the command
+* To get the road type distribution in a city as Fig. (4), you can run the command
 ```
  python kmean_pca_analysis.py --mode city_ratio
 ```
-* To find out the f1 value vs. road network types as Fig. (5), you can run the command
+* To get the f1 value vs. road network types as Fig. (5), you can run the command
 ```
  python kmean_pca_analysis.py --mode f1_vs_type
 ```
-* To see the f1 value vs. PCA1 as Fig. (6), you can run the command
+* To get the f1 value vs. PCA1 as Fig. (6), you can run the command
 ```
  python kmean_pca_analysis.py --mode f1_vs_PCA1
 ```
