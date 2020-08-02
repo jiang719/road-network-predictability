@@ -33,3 +33,11 @@ The results will be saved in the directory 'RoadClassification/results'
 ```
  python kmean_pca_analysis.py --mode f1_vs_type
 ```
+* To see the f1 value vs. cities, you can get the Fig. ()
+```
+ python kmean_pca_analysis.py --mode f1_vs_type
+```
+* To see the center point of each road type, you can get the Fig. ()
+```
+ python kmean_pca_analysis.py --mode center
+```
