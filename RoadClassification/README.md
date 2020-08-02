@@ -33,15 +33,15 @@ The results will be saved in the directory 'RoadClassification/results'
 ```
  python kmean_pca_analysis.py --mode center
 ```
-* To see the road type distribution in a city, refer Fig. ()
+* To see the road type distribution in a city, refer Fig. (4)
 ```
  python kmean_pca_analysis.py --mode city_ratio
 ```
-* To find out the f1 value vs. road network types, you can get the Fig. ()
+* To find out the f1 value vs. road network types, you can get the Fig. (5)
 ```
  python kmean_pca_analysis.py --mode f1_vs_type
 ```
-* To see the f1 value vs. PCA1, you can get the Fig. ()
+* To see the f1 value vs. PCA1, you can get the Fig. (6)
 ```
  python kmean_pca_analysis.py --mode f1_vs_PCA1
 ```
