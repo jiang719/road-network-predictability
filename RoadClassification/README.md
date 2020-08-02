@@ -26,7 +26,7 @@ The results will be saved in the directory 'RoadClassification/results'
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="800" height="550">
 </p>
 
-* To see F1 value vs. cities as Fig. (1), you can get the command
+* To see F1 value vs. cities as Fig. (1), you can get the command 123
 ```
  python kmean_pca_analysis.py --mode f1_vs_city
 ```
