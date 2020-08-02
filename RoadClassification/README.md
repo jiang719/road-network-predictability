@@ -14,3 +14,7 @@ This part is the implementation of road network classification and predictabilit
 ```
  python measures.py --mode train
 ```
+* Extract the features of the road networks from test set,
+```
+ python measures.py --mode test
+```
