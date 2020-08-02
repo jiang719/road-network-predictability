@@ -21,23 +21,27 @@ This part is the implementation of road network classification and predictabilit
 The results will be saved in the directory 'RoadClassification/results'
 
 ## Visualization
-* We classify the road networks into 4 types using k-mean clustering, and visualize via PCA, and you can get the Fig. ()
+* To see F1 value vs. cities, and you can get the Fig. (1)
+```
+ python kmean_pca_analysis.py --mode f1_vs_city
+```
+* We classify the road networks into 4 types using k-mean clustering, and visualize via PCA, and you can get the Fig. (2)
 ```
  python kmean_pca_analysis.py --mode pca_visualize
 ```
-* To see the ratio of different road types in a city, you can get the Fig. ()
+* To see the center point of each road type, refer to Fig. (3)
+```
+ python kmean_pca_analysis.py --mode center
+```
+* To see the road type distribution in a city, refer Fig. ()
 ```
  python kmean_pca_analysis.py --mode city_ratio
 ```
-* To see the f1 value vs. road network types, you can get the Fig. ()
+* To find out the f1 value vs. road network types, you can get the Fig. ()
 ```
  python kmean_pca_analysis.py --mode f1_vs_type
 ```
-* To see the f1 value vs. cities, you can get the Fig. ()
+* To see the f1 value vs. PCA1, you can get the Fig. ()
 ```
- python kmean_pca_analysis.py --mode f1_vs_type
-```
-* To see the center point of each road type, you can get the Fig. ()
-```
- python kmean_pca_analysis.py --mode center
+ python kmean_pca_analysis.py --mode f1_vs_PCA1
 ```
