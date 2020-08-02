@@ -452,7 +452,7 @@ def f1():
     return
 
 def f1_vs_network_type(k):
-    with open('training_set_index.txt') as json_file:
+    with open('results/training_set_index.txt') as json_file:
         city_index = json.load(json_file)
     data = np.zeros((len(city_index), 11))
     num_2_cityname = {}
@@ -460,13 +460,13 @@ def f1_vs_network_type(k):
         num_2_cityname[city_num] = city
         for idx_num, attribute in enumerate(city_index[city]):
             data[city_num, idx_num] = city_index[city][attribute]
-    print('data shape: ', data.shape)
+    print('training data shape: ', data.shape)
 
     data_mean = np.mean(data, axis=0, keepdims=True)
     data_std = np.std(data, axis=0, keepdims=True)
     data = (data - data_mean)/data_std
 
-    with open('test_set_index.txt') as json_file:
+    with open('results/test_set_index.txt') as json_file:
         city_index = json.load(json_file)
     test_data = np.zeros((len(city_index), 11))
     test_num_2_cityname = {}
@@ -478,38 +478,16 @@ def f1_vs_network_type(k):
 
     test_data = (test_data - data_mean)/data_std
 
-    # ################### this part is for SDNi ####################
-    # pca = PCA(n_components=2)
-    # newData = pca.fit_transform(data)
-    # SDNi = newData[:,0]
-    #
-    # print('min SDNi: ', np.min(newData[:,0]), ', max SDNi: ', np.max(newData[:,0]))
-    # print('explained_variance_ratio: ', pca.explained_variance_ratio_)
-    # print('explained_variance: ', pca.explained_variance_)
-    # #############################################################
-
-    ################## elbow method #############################
     k = k
 
     kmeanModel = KMeans(n_clusters=k, random_state = 1)
     kmeanModel.fit(data)
 
-    # print(kmeanModel.labels_== 1)
     pca = PCA(n_components=6)
     newData = pca.fit_transform(data)
-    # print(np.sum(np.abs(np.matmul(data,np.transpose(pca.components_))-newData)))
     test_newData = np.matmul(test_data,np.transpose(pca.components_))
 
     change_order = True
-
-    # if change_order:
-    #     SDNi = np.zeros(k)
-    #     change_order_mapping = {}
-    #     for i in range(k):
-    #         SDNi[i] = np.mean(newData[kmeanModel.labels_== i][:,0])
-    #     argsorted_SDNi = np.argsort(SDNi)
-    #     for i in range(len(kmeanModel.labels_)):
-    #         kmeanModel.labels_[i] = argsorted_SDNi[kmeanModel.labels_[i]]
     if change_order:
         SDNi = np.zeros(k)
         change_order_mapping = {}
@@ -523,66 +501,33 @@ def f1_vs_network_type(k):
 
     cluster_centers_ = np.zeros((k, data.shape[1]))
     for i in range(k):
-        # print(kmeanModel.labels_== i)
         cluster_centers_[i,:] = np.mean(data[kmeanModel.labels_== i], axis = 0, keepdims=True)
 
     pair_distance = cdist(test_data, cluster_centers_, 'euclidean')
-    # print(pair_distance.shape)
     test_data_assign_label = np.argmin(pair_distance, axis = 1)
 
-    # print(test_data_assign_label)
-
-    # # #### plot test data
-    # fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 7))
-    # plt.plot(test_newData[test_data_assign_label == 0][:, 0], test_newData[test_data_assign_label == 0][:, 1], 'o', markersize=3,
-    #          label="Type 1")
-    # plt.plot(test_newData[test_data_assign_label == 1][:, 0], test_newData[test_data_assign_label == 1][:, 1], 'o', markersize=3,
-    #          label="Type 2")
-    # plt.plot(test_newData[test_data_assign_label == 2][:, 0], test_newData[test_data_assign_label == 2][:, 1], 'o', markersize=3,
-    #          label="Type 3")
-    # plt.plot(test_newData[test_data_assign_label == 3][:, 0], test_newData[test_data_assign_label == 3][:, 1], 'o', markersize=3,
-    #          label="Type 4")
-    # # plt.plot(newData[kmeanModel.labels_== 4][:,0], newData[kmeanModel.labels_== 4][:,1], 'o', markersize=3, label="Type 5")
-    # # ax1.set_xticks([-4, -2, 0, 2, 4])
-    # # ax1.set_yticks([-4, -2, 0, 2, 4])
-    # ax1.set_title("2 dimension PCA plot", font1, fontsize=20)
-    # plt.yticks(fontsize=22)
-    # plt.xticks(fontsize=22)
-    # plt.xlabel('Dimension 1', font1)
-    # plt.ylabel('Dimension 2', font1)
-    # plt.legend(loc="upper right", fontsize=14, markerscale=3.)
-    # plt.grid(True)
-    # # plt.savefig('figure2_6.pdf', bbox_inches='tight')
-    # # plt.savefig('figure2_6.svg', bbox_inches='tight')
-    # plt.tight_layout()
-    # plt.show()
-
     ## read test data f1 value
-    test_result = json.load(open('f1_score_test_result.json', 'r'))
+    test_result = json.load(open('results/f1_score_test_result.json', 'r'))
     test_result_ = {}
     for city in test_result:
         for city_name in test_result[city]:
             new_city_name = city_name.split('_')[0]+city_name.split('_')[1]+'_'+city_name.split('_')[2]
             test_result_[new_city_name] = test_result[city][city_name]
-    print(len(test_result_))
+
     results_road_type = {}
     for i in range(k):
         results_road_type[i] = []
     for idx in range(test_data_assign_label.shape[0]):
         if test_num_2_cityname[idx]+'_1' in test_result_:
-            # print(idx, test_data_assign_label[idx], test_num_2_cityname[idx], test_result_[test_num_2_cityname[idx]+'_1'], test_result_[test_num_2_cityname[idx]+'_2'])
             results_road_type[test_data_assign_label[idx]].append(test_result_[test_num_2_cityname[idx] + '_1'])
             results_road_type[test_data_assign_label[idx]].append(test_result_[test_num_2_cityname[idx] + '_2'])
-    # for i in range(k):
-    #     print(len(results_road_type[i])/2)
 
-    ####
     all_data = []
     for i in range(k):
         all_data.append(results_road_type[i])
     cityName = ['Type 1', 'Type 2', 'Type 3', 'Type 4']
     # step 2: figure
-    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 5), dpi=1200)
+    fig, ax1 = plt.subplots(nrows=1, ncols=1, figsize=(7, 5))#, dpi=1200)
     bplot1 = ax1.boxplot(all_data,
                          vert=True,  # vertical box alignment
                          patch_artist=True,  # fill with color
@@ -599,9 +544,8 @@ def f1_vs_network_type(k):
     ax1.yaxis.grid(True)
     plt.ylabel('F1 score', font1, fontsize=22)
     plt.tight_layout()
-    plt.savefig('main_text/citytype_vs_f1.pdf', bbox_inches='tight')
-    plt.savefig('main_text/citytype_vs_f1.svg', bbox_inches='tight')
-    # plt.show()
+    plt.savefig('figures/citytype_vs_f1.png', bbox_inches='tight')
+    plt.show()
 
 def f1_vs_city(k):
     with open('training_set_index.txt') as json_file:
@@ -1287,9 +1231,8 @@ if __name__ == '__main__':
     if args.mode == 'city_ratio':
         city_ratio(k=4)
 
-    # pca_visualize(k=4)
-    # city_ratio_all(k = 4)
-    # pca_visualize(k = 4)
+    if args.mode == 'f1_vs_type':
+        f1_vs_network_type(4)
     # pca_visualize_center(k=4)
     # elbow()
     # f1()
