@@ -26,11 +26,11 @@ The results will be saved in the directory 'RoadClassification/results'
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="500" height="500">
 </p>
 
-* To see F1 value vs. cities, and you can get the Fig. (1)
+* To see F1 value vs. cities as Fig. (1), you can get the command
 ```
  python kmean_pca_analysis.py --mode f1_vs_city
 ```
-* We classify the road networks into 4 types using k-mean clustering, and visualize via PCA, and you can get the Fig. (2)
+* We classify the road networks into 4 types using k-mean clustering, and visualize them via PCA as Fig. (2). The command is followed,
 ```
  python kmean_pca_analysis.py --mode pca_visualize
 ```
