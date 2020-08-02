@@ -10,7 +10,7 @@ This part is the implementation of road network classification and predictabilit
 * networkx 2.1
 
 ## Feature extraction
-
+* Extract the features of the road networks from training set,
 ```
- python run_code.py
+ python measures.py --mode train
 ```
