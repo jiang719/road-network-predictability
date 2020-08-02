@@ -21,9 +21,11 @@ This part is the implementation of road network classification and predictabilit
 The results will be saved in the directory 'RoadClassification/results'
 
 ## Visualization
+
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="400" height="300">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadClassification/figures/combine.png" width="500" height="500">
 </p>
+
 * To see F1 value vs. cities, and you can get the Fig. (1)
 ```
  python kmean_pca_analysis.py --mode f1_vs_city
