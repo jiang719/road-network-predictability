@@ -25,6 +25,7 @@ class RGCNLayer(nn.Module):
         x, feature, _adjs = inputs['x'], inputs['feature'], inputs['adj']
 
         x = torch.cat([x, feature], dim=2)
+        #print(x.size())
         x = self.fc(x)
         x = self.norm(x)
         x = F.dropout(torch.tanh(x), self.dropout)

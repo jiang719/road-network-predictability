@@ -18,7 +18,7 @@ def normalize_adj(adj):
 
 
 class SGCNLayer(nn.Module):
-    def __init__(self, hidden_dim, label_num, v_num=4, dropout=0.1):
+    def __init__(self, hidden_dim, label_num, dropout=0.1):
         super(SGCNLayer, self).__init__()
         self.hidden_dim = hidden_dim
         self.label_num = label_num
@@ -26,10 +26,10 @@ class SGCNLayer(nn.Module):
 
         self.fc = nn.Linear(hidden_dim + 2, hidden_dim)
         self.norm = nn.LayerNorm(hidden_dim)
-        self.W = nn.Parameter(torch.rand(hidden_dim, v_num, hidden_dim).to(device))
-        self.a = nn.Parameter(torch.rand(label_num + 1, v_num).to(device))
+        self.W = nn.Parameter(torch.rand(label_num + 1, hidden_dim, hidden_dim).to(device))
+        #self.a = nn.Parameter(torch.rand(label_num + 1, v_num).to(device))
         nn.init.xavier_uniform_(self.W.data)
-        nn.init.xavier_uniform_(self.a.data)
+        #nn.init.xavier_uniform_(self.a.data)
 
     def forward(self, inputs):
         x, feature, adjs = inputs['x'], inputs['feature'], inputs['adj']
@@ -40,6 +40,7 @@ class SGCNLayer(nn.Module):
         x = F.dropout(torch.tanh(x), p=self.dropout, training=self.training)
 
         bsz, max_number = adjs.size(0), adjs.size(2)
+        '''
         supports = [torch.bmm(torch.eye(max_number).repeat(bsz, 1, 1), x).unsqueeze(1)]
         for i in range(self.label_num):
             supports.append(torch.bmm(adjs[:, i, :, :], x).unsqueeze(1))
@@ -48,10 +49,12 @@ class SGCNLayer(nn.Module):
         output = torch.matmul(supports, output)  # [bsz, 1+r, L, H] x [1+r, H, H] = [bsz, 1+r, L, H]
         output = torch.sum(output, dim=1)
         '''
-        output = torch.bmm(torch.eye(max_number).repeat(bsz, 1, 1), x) * self.a[-1]
+
+        output = torch.bmm(torch.eye(max_number).repeat(bsz, 1, 1), x)
+        output = torch.matmul(output, self.W[-1])
         for i in range(self.label_num):
-            output += torch.bmm(adjs[:, i, :, :], x) * self.a[i]
-        '''
+            output += torch.matmul(torch.bmm(adjs[:, i, :, :], x), self.W[i])
+
         output /= (self.label_num + 1)
         output = F.dropout(output, p=self.dropout, training=self.training)
 

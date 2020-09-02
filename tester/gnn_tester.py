@@ -9,13 +9,6 @@ from tester.vec_tester import is_valid
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-'''
-def distance(n1, n2):
-    lat = 111 * 1e3 * abs(n1['lat'] - n2['lat'])
-    lon = 111 * 1e3 * abs(n1['lon'] - n2['lon']) * np.cos(n1['lat'])
-    return np.sqrt(lon**2 + lat**2)
-'''
-
 
 def angle(n1, n2):
     x1, y1 = n1['lon'], n1['lat']
@@ -42,26 +35,13 @@ def angle(n1, n2):
 
 
 def edge_label(n1, n2):
-    '''
-    dist = distance(n1, n2)
-    if dist <= 100:
-        dist = 0
-    elif dist <= 300:
-        dist = 1
-    else:
-        dist = 2
-    '''
     ang = angle(n1, n2)
-    #return str(ang) + str(dist)
     return str(ang)
 
 
 def get_edge_labels():
     labels = {}
     for ang in range(8):
-        #for dist in range(3):
-        #    k = str(ang) + str(dist)
-        #    labels[k] = len(labels)
         k = str(ang)
         labels[k] = len(labels)
     return labels
@@ -87,7 +67,13 @@ class GNNTester():
                 if ids not in self.id2node:
                     self.id2node[ids] = node
 
-    def prepare_batch_data(self, data, max_number, edge_labels):
+    def get_max_number(self):
+        max_number = 0
+        for index in self.test_loader.data[self.city]:
+            max_number = max(max_number, len(self.test_loader[index]['nodes']))
+        return max_number + 1
+
+    def prepare_batch_data(self, data, max_number, edge_labels, cut_number=None):
         X = torch.zeros(len(data), max_number).long().to(device)
         F = torch.zeros(len(data), max_number, 2).to(device)
         A = torch.zeros(len(data), len(edge_labels), max_number, max_number).to(device)
@@ -112,6 +98,8 @@ class GNNTester():
 
             x = [i + 1 for i in range(len(nodes))]
             x += [0] * (max_number - len(x))
+            if cut_number is not None:
+                x = [min(x[i], cut_number) for i in range(len(x))]
             f = [[n['lon'], n['lat']] for n in nodes]
             f += [[0, 0] for i in range(max_number - len(f))]
             x = torch.LongTensor(x).to(device)
@@ -127,6 +115,74 @@ class GNNTester():
 
             X[i], F[i], A[i] = x, f, adj
         return X, F, A, N, S, T
+
+    def improved_test(self, model, max_number, edge_labels, cut_max_number):
+        model.eval()
+        right, wrong, total = 0, 0, 0
+
+        if self.city in ['Hongkong', 'Guangzhou', 'Singapore']:
+            th = 0.2
+        elif self.city in ['Beijing', 'Shanghai', 'Shenzhen']:
+            th = 0.45
+        else:
+            th = 0.6
+
+        data = [self.test_loader[i] for i in range(len(self.test_loader))]
+        ids = [self.test_loader.ids[i] for i in range(len(self.test_loader))]
+        batch_size = 32
+        result = {}
+        for _ in range(0, len(data), batch_size):
+            X, F, A, N, S, T = \
+                self.prepare_batch_data(data[_: _ + batch_size], max_number, edge_labels, cut_number=cut_max_number)
+            output = model({
+                'x': X,
+                'feature': F,
+                'adj': A
+            }).view(X.size(0), X.size(1), X.size(1), 2).to('cpu')
+            for i in range(len(output)):
+                predict = output[i][..., 1]
+                existed_edges = S[i]
+                cand_edges = []
+                number = len(N[i])
+
+                idx = ids[_ + i]
+                r, w, t = 0, 0, 0
+                for j in range(number):
+                    for k in range(j + 1, number):
+                        start, end = N[i][j]['osmid'], N[i][k]['osmid']
+                        if {'start': start, 'end': end} in T[i] or {'start': end, 'end': start} in T[i]:
+                            target = 1
+                        else:
+                            target = 0
+                        cand_edges.append({
+                            'start': start,
+                            'end': end,
+                            'score': float(predict[j][k]),
+                            'target': target,
+                        })
+                cand_edges.sort(key=lambda e: e['score'], reverse=True)
+                for edge in cand_edges:
+                    if edge['score'] < np.log(th):
+                        break
+                    if is_valid(edge, existed_edges, self.id2node):
+                        existed_edges.append(edge)
+                        if edge['target'] == 1:
+                            r += 1
+                        else:
+                            w += 1
+                t = len(T[i])
+                precision = r / (r + w + 1e-9)
+                recall = r / (t + 1e-9)
+                f1 = 2 * precision * recall / (precision + recall + 1e-9)
+                result[idx] = round(f1, 4)
+
+                right += r
+                wrong += w
+                total += t
+            precision = right / (right + wrong + 1e-9)
+            recall = right / (total + 1e-9)
+            f1 = 2 * precision * recall / (precision + recall + 1e-9)
+        return round(f1, 4), result
 
     def test(self, model, max_number, edge_labels, result_dir):
         model.eval()
@@ -177,6 +233,6 @@ class GNNTester():
         precision = right / (right + wrong + 1e-9)
         recall = right / (total + 1e-9)
         f1 = 2 * precision * recall / (precision + recall + 1e-9)
-        pickle.dump(test_result, open(result_dir + self.city + '_result.pkl', 'wb'))
+        #pickle.dump(test_result, open(result_dir + self.city + '_result.pkl', 'wb'))
         return right, wrong, total, precision, recall, f1
 

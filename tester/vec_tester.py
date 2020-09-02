@@ -71,7 +71,7 @@ def is_acute(node1, node2, node3, node4):
         unit_vector_2 = vector_2 / np.linalg.norm(vector_2)
         dot_product = np.dot(unit_vector_1, unit_vector_2)
         angle = np.arccos(dot_product) / math.pi * 180
-        if angle < 35:
+        if angle < 40:
             return True
         else:
             return False
@@ -105,7 +105,7 @@ class VecTester():
                 ids = node['osmid']
                 if ids not in self.id2node:
                     self.id2node[ids] = node
-        self.embedding = pickle.load(open(data_dir + 'test/' + self.city + '_embedding.pkl', 'rb'))
+        #self.embedding = pickle.load(open(data_dir + 'test/' + self.city + '_embedding.pkl', 'rb'))
 
     def test(self, model, result_dir):
         model.eval()

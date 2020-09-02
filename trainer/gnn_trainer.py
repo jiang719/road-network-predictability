@@ -75,10 +75,8 @@ class GNNTrainer():
             X[i], F[i], A[i], T[i] = x, f, adj, target
         return X, F, A, T
 
-    def train_model(self, batch_size=4, epochs=7, result_dir=None):
+    def train_model(self, batch_size=4, epochs=10, result_dir=None):
         print('train data:', len(self.train_loader))
-        if len(self.train_loader) < 100:
-            batch_size = 2
         optimizer = torch.optim.SGD(self.model.parameters(), lr=0.05, momentum=0.9)
         loss_fct = nn.NLLLoss()
         data = [self.train_loader[i] for i in range(len(self.train_loader))]
@@ -86,7 +84,7 @@ class GNNTrainer():
         best_f1 = 0.
         for epoch in range(epochs):
             self.model.train()
-            if epoch == 4:
+            if epoch == 5:
                 for param in optimizer.param_groups:
                     param['lr'] = 0.02
             random.shuffle(data)

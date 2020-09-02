@@ -25,10 +25,10 @@ class VecTrainer():
         data.update(self.tester.test_loader.data[self.city])
         keys = sorted(list(data.keys()))
         embeds = {}
-        for i in range(0, len(keys), 30):
+        for i in range(0, len(keys), 40):
             print(self.city, i, len(keys))
             nodes, edges = [], []
-            for index in keys[i: i + 30]:
+            for index in keys[i: i + 40]:
                 nodes += data[index]['nodes']
                 edges += data[index]['source_edges']
             G = DataLoader.build_graph(nodes, edges)
@@ -79,23 +79,24 @@ class VecTrainer():
                     'end_embedding': embeds[str(end)] if str(end) in embeds else np.zeros(self.embed_dim),
                     'target': target,
                 })
+        print(self.city, len(self.embedding), len(test_embedding))
         pickle.dump(test_embedding,
                     open(data_dir + 'test/' + self.city + '_embedding.pkl', 'wb'))
 
     def train_distmult(self, batch_size=128, epochs=7, data_dir=None, result_dir=None):
         samples = pickle.load(open(data_dir + 'train/' + self.city + '_embedding.pkl', 'rb'))
-        #test_data = []
-        #for k, v in self.tester.embedding.items():
-        #    test_data += [str(s['start_id']) + '_' + str(s['end_id']) for s in v] + \
-        #                 [str(s['end_id']) + '_' + str(s['start_id']) for s in v]
-        #test_data = set(test_data)
+        test_data = []
+        for k, v in self.tester.embedding.items():
+            test_data += [str(s['start_id']) + '_' + str(s['end_id']) for s in v] + \
+                         [str(s['end_id']) + '_' + str(s['start_id']) for s in v]
+        test_data = set(test_data)
 
-        #positive = [s for s in samples if s['target'] == 1 and
-        #            str(s['start_id']) + '_' + str(s['end_id']) not in test_data]
-        #negative = [s for s in samples if s['target'] == 0 and
-        #            str(s['start_id']) + '_' + str(s['end_id']) not in test_data]
-        positive = [s for s in samples if s['target'] == 1]
-        negative = [s for s in samples if s['target'] == 0]
+        positive = [s for s in samples if s['target'] == 1 and
+                    str(s['start_id']) + '_' + str(s['end_id']) not in test_data]
+        negative = [s for s in samples if s['target'] == 0 and
+                    str(s['start_id']) + '_' + str(s['end_id']) not in test_data]
+        #positive = [s for s in samples if s['target'] == 1]
+        #negative = [s for s in samples if s['target'] == 0]
         self.embedding = positive + negative
         for _ in range(1, int(len(negative) / len(positive) / 4)):
             self.embedding += positive
@@ -154,6 +155,6 @@ class VecTrainer():
         right, wrong, total, precision, recall, f1 = self.tester.test(best_model, result_dir)
         print('final f1:', f1)
 
-    def save_model(self, model):
+    def save_distmult(self, model):
         raise NotImplementedError
 
