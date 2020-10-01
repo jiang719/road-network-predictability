@@ -20,8 +20,8 @@ def load_model_result(model, data_dir):
     result = {}
     for file in files:
         city = file.split('_')[0].strip()
-        if city not in ['Guangzhou']:
-            continue
+        #if city not in ['Guangzhou']:
+        #    continue
         result[city] = load_city_result(city, model, data_dir)
     return result
 
@@ -241,4 +241,4 @@ if __name__ == "__main__":
     #roc(models)
     #precision_recall(models)
     #best_threshold('Relational-GCN')
-    predict('Relational-GCN')
+    #predict('Relational-GCN')
