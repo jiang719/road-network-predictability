@@ -13,5 +13,6 @@ This setion is the implementation of road network prediction. We try 6 different
 After training 6 models for road network prediction, we test them on our test set. We use 2 metrics, true positive rate - false positive rate curve and precision recall curve, to evaluate and visualize the performance of each model. The results show that Relational GCN performs the best on road network prediction.
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadPrediction/figure1.b_c_result/figure1_b_total.pdf" width="400" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadPrediction/figure1.b_c_result/figure1_b_total.png" width="400" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/RoadPrediction/figure1.b_c_result/figure1_c_total.png" width="400" height="400">
 </p>
