@@ -3,8 +3,12 @@
 This setion is the implementation of road network prediction. We try 6 different models to predict the missing roads based on the incomplete road network, including Node2Vec, Struc2Vec, Graph-SAGE, SPrectral GCN, Relational GCN and Graph Attention Network. 
 
 ## Directory Structure
-* GraphEmbedding: G
-
+* GraphEmbedding: implementation of Node2Vec and Struc2Vec
+* models: implementation of 6 different road network predict models
+* trainer: code to train road network predict models
+* tester: code to test road network predict models
+* utils: code to for data loader and analyzing the best theshold
+* figure1.b_c_result: code to visualize the evaluation and comparison of different models
 
 ## Requirements
 * Window system
