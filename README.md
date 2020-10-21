@@ -31,22 +31,28 @@ Submitted to Nature Communications, 2020.
 * **intercity-homogeneity**: learn RNS features on city A and test link prediction on city B, get the asymmetric intercity homogeneity. 
 
 ## Demo
+Training and testing.
 
-* **Training and testing**
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/mainFigures/001.png" width="450" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/001.png" width="450" height="400">
 </p>
-* **Road classification**
+
+Road classification.
+
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/mainFigures/002.png" width="450" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/002.png" width="450" height="400">
 </p>
-* **Association analysis**
+
+Association analysis.
+
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/mainFigures/003.png" width="450" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/003.png" width="450" height="400">
 </p>
-* **Intercity homogeneity**
+
+Intercity homogeneity.
+
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/mainFigures/004.png" width="450" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/004.png" width="450" height="400">
 </p>
 ## Requirement
 
