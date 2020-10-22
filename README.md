@@ -26,7 +26,7 @@ Submitted to Nature Communications, 2020.
 
 * **data-collection**: collect and preprocess the road network data for 30 cities in USA, Europe, and Asia. 
 * **road-prediction**: perform the link prediction on RNS using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and get F1 scores.
-* **road-classification, SDNiDisconnected_0716data, SDNiDisconnectednessIndex**: implement the RNS classification and discover connection with F1 scores.
+* **road-classification**: implement the RNS classification and discover connection with F1 scores.
 * **association-analysis**: conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
 * **intercity-homogeneity**: learn RNS features on city A and test link prediction on city B, get the asymmetric intercity homogeneity. 
 
@@ -34,7 +34,7 @@ Submitted to Nature Communications, 2020.
 Training and testing.
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/001.png" width="450" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/001.png" width="540" height="480">
 </p>
 
 Road classification.
