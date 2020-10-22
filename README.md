@@ -40,19 +40,19 @@ Training and testing.
 Road classification.
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/002.png" width="450" height="450">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/002.png" width="630" height="560">
 </p>
 
 Association analysis.
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/003.png" width="450" height="450">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/003.png" width="630" height="630">
 </p>
 
 Intercity homogeneity.
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/004.png" width="450" height="400">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/004.png" width="630" height="630">
 </p>
 ## Requirement
 
