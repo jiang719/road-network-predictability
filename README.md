@@ -40,7 +40,7 @@ Training and testing.
 Road classification.
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/002.png" width="630" height="560">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/002.png" width="630" height="600">
 </p>
 
 Association analysis.
