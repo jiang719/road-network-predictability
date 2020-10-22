@@ -34,7 +34,7 @@ Submitted to Nature Communications, 2020.
 Training and testing.
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/001.png" width="540" height="480">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/001.png" width="630" height="560">
 </p>
 
 Road classification.
