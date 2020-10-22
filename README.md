@@ -8,7 +8,7 @@ A graph neural network framework to obtain the spatial homogeneity index of a ro
 It quantifies both the local and global structural properties of RNS, and have promising employments in congestion analysis, network optimization, 
 urban planning evaluation, geodatabase refinement.
 * This GitHub page discusses a user-friendly approach to compute spatial homogeneity for RNS worldwide. 
-* RNS classification, RNS SNDI calculation, social-economic factors relation analysis are also attached.  
+* RNS classification, RNS SNDi calculation, social-economic factors relation analysis are also attached.  
 
 ## Publication
 
