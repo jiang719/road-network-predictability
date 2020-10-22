@@ -1,6 +1,4 @@
 # Network Predictability and Road Network Classification
-[![996.ICU](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) 
-![GitHub](https://img.shields.io/github/license/gbup-group/DIANet.svg)
 
 This section is the implementation of road network classification and predictability analysis. We aggregate 11 measures to extract the topology features from a road network. These measures consist of the node degree distribution, road circuity and dendricity. Based on these measures, we study the relation between
 
