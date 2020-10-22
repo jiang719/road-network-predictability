@@ -1,4 +1,4 @@
-# Network Predictability and Road Network Classification
+# Predictability and Road Network Classification
 
 This section is the implementation of road network classification and predictability analysis. We aggregate 11 measures to extract the topology features from a road network. These measures consist of the node degree distribution, road circuity and dendricity. Based on these measures, we study the relation between
 
