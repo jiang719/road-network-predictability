@@ -16,6 +16,33 @@ This setion is the implementation of road network prediction. We try 6 different
 * networkx 2.1
 * pytorch 1.0
 
+## Training
+* To train node2vec + distmult model
+```
+ cd trainer
+ python node2vec_trainer.py
+```
+* To train struc2vec + distmult model
+```
+ python struc2vec_trainer.py
+```
+* To train spectral gcn + distmult model
+```
+ python spectral_gcn_trainer.py
+```
+* To train graph sage + distmult model
+```
+ python graph_sage_trainer.py
+```
+* To train relational gcn + distmult model
+```
+ python relational_gcn_trainer.py
+```
+* To train graph attention network + distmult model
+```
+ python gat_trainer.py
+```
+
 ## Model Comparison
 
 After training 6 models for road network prediction, we test them on our test set. We use 2 metrics, true positive rate - false positive rate curve and precision recall curve, to evaluate and visualize the performance of each model. The results show that Relational GCN performs the best on road network prediction. Then we use 2 improvements (i.e. intersection and acute angle judgment) to get an improved Relational GCN.
