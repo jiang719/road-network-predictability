@@ -21,6 +21,7 @@ Submitted to Nature Communications, 2020.
 * Python 3.6
 * NetworkX 2.1 (A Python package)
 * OSMnx 0.16.1 (A Python package)
+* PyTorch 1.0 
 
 ## Directory Structure
 
