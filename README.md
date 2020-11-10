@@ -32,34 +32,9 @@ Submitted to Nature Communications, 2020.
 * **intercity-homogeneity**: Get the inter-city homogeneity matrix by learning RNS features on city A and testing link prediction on city B.
 
 ## Results
-Training and testing.
 
 <p align="center">
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="630" height="560">
-</p>
-
-Road classification.
-
-<p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/002.png" width="630" height="600">
-</p>
-
-Association analysis.
-
-<p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/003.png" width="630" height="630">
-</p>
-
-Inter-city homogeneity.
-
-<p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004.png" width="630" height="630">
-</p>
-
-Inter-city homogeneity distribution
-
-<p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/005.png" width="450" height="630">
 </p>
 
 ## License
