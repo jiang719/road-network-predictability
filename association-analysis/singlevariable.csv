@@ -1,0 +1,16 @@
+statistics,R2,F,P,Pearson,DW
+GDP,0.162,5.406,0.028,0.402,1.97
+Population-2020,0.048,1.421,0.243,-0.22,2.147
+Lambda_1,0.115,3.525,0.071,-0.124,2.018
+airport_annual_passengers,0.002,0.057,0.813,-0.045,2.141
+land_area_net,0.071,27.99,0,0.707,1.873
+intersection_number,0.14,4.556,0.042,0.374,2.137
+road_number,0.133,4.284,0.048,0.364,2.116
+road_length,0.301,12.03,0.002,0.548,2.037
+intersection_density,0.02,0.572,0.456,0.142,2.156
+road_number_density,0.033,0.9614,0.335,0.182,2.155
+road_length_density,0.123,3.935,0.057,0.351,2.234
+road_number/intersection_number,0.293,11.58,0.002,0.541,1.945
+Betweenness,0.077,2.346,0.137,0.278,2.309
+road_length/road_number,0.002,0.042,0.837,-0.039,2.108
+average_betweennese,0.461,23.94,0,-0.679,2.477
