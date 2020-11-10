@@ -58,7 +58,7 @@ Inter-city homogeneity.
 Inter-city homogeneity distribution
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/005.png" width="630" height="630">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/005.png" width="450" height="630">
 </p>
 
 ## License
