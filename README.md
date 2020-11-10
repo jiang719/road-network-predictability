@@ -19,8 +19,8 @@ Submitted to Nature Communications, 2020.
 ## Requirements
 * Window System
 * Python 3.6
-* NetworkX 2.1 (A Python package)
-* OSMnx 0.16.1 (A Python package)
+* NetworkX 2.1 
+* OSMnx 0.16.1
 * PyTorch 1.0 
 
 ## Directory Structure
