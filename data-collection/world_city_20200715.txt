@@ -1,0 +1,30 @@
+1	New york	USA	40.73	-73.94	20	300	100
+2	Los angeles	USA	34.04	-118.24	20	300	100
+3	Chicago	USA	41.87	-87.68	20	300	100
+4	Houston	USA	29.75	-95.36	20	300	100
+5	Philadelphia	USA	39.95	-75.16	20	300	100
+6	Phoenix	USA	33.45	-112.07	20	300	100
+7	San diego	USA	32.73	-117.11	20	300	100
+8	San antonio	USA	29.42	-98.49	20	300	100
+9	Dallas	USA	32.78	-96.8	20	300	100
+10	Detroit	USA	42.38	-83.09	20	300	100
+11	Tokyo	Japan 	35.69	139.76	20	300	100
+12	Osaka	Japan 	34.67	135.5	20	300	100
+13	Beijing	China	39.91	116.4	20	300	100
+14	Shanghai	China	31.23	121.48	20	300	100
+15	Guangzhou	China	23.12	113.28	20	300	100
+16	Shenzhen	China	22.54	113.98	20	300	100
+17	Hongkong	Hongkong	22.31	114.18	20	300	100
+18	Singapore	Singapore	1.34	103.86	20	300	100
+19	Seoul	South Korea	37.54	126.98	20	300	100
+20	Delhi	India	28.64	77.21	20	300	100
+21	London	England	51.51	-0.13	20	300	100
+22	Paris	France	48.86	2.34	20	300	100
+23	Moscow	Russia	55.75	37.62	20	300	100
+24	Amsterdam	Netherland	52.38	4.9	20	300	100
+25	Milan	Italy	45.47	9.18	20	300	100
+26	Madrid	Spain	40.42	-3.7	20	300	100
+27	Brussels	Belgian	50.85	4.36	20	300	100
+28	Berlin	Germany	52.52	13.4	20	300	100
+29	Munich	Germany	48.14	11.58	20	300	100
+30	Stockholm	Sweden	59.33	18.06	20	300	100
