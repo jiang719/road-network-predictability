@@ -55,3 +55,6 @@ Inter-city homogeneity.
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/004.png" width="630" height="630">
 </p>
 
+## License
+MIT license
+
