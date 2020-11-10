@@ -1,4 +1,4 @@
-# Road Network Prediction
+# Road network prediction
 
 This setion is the implementation of road network prediction. We try 6 different models to predict the missing roads based on the incomplete road network, including Node2vec, Struc2vec, GraphSage, Sprectral GCN, Relational GCN and Graph Attention Network. 
 
