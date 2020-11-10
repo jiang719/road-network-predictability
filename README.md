@@ -30,7 +30,7 @@ Submitted to Nature Communications, 2020.
 * **association-analysis**: Conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
 * **intercity-homogeneity**: Get the inter-city homogeneity matrix by learning RNS features on city A and testing link prediction on city B.
 
-## Result
+## Results
 Training and testing.
 
 <p align="center">
