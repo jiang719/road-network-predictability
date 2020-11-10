@@ -1,36 +1,36 @@
-## Quantifying Spatial Homogeneity of Urban Road System via Predictability of Graph Neural Networks
+## Quantifying spatial homogeneity of urban road networks via graph neural networks
 
-A graph neural network framework to obtain the spatial homogeneity index of a road network system (RNS) 
+A graph neural network computing the spatial homogeneity index of an urban road network(URN) 
 
 ## Introduction
 
-* Spatial homogeneity of an RNS measures the consistency of "network style" across different regions of RNS. 
-It quantifies both the local and global structural properties of RNS, and have promising employments in congestion analysis, network optimization, 
-urban planning evaluation, geodatabase refinement.
-* This GitHub page discusses a user-friendly approach to compute spatial homogeneity for RNS worldwide. 
-* RNS classification, RNS SNDi calculation, social-economic factors relation analysis are also attached.  
+* Spatial homogeneity of a URN measures the similarity of "network style" between the partial network and the whole network. 
+It quantifies both the local and global structural properties of the URN, and has promising employments in congestion analysis, network optimization, 
+geodatabase refinement, and urban transfer learning.
+* This GitHub repository discusses a user-friendly approach to compute spatial homogeneity for URN worldwide. 
+* URN classification, URN SNDi calculation, social-economic factor relation analysis, intercity homogeneity analysis are also attached.  
 
 ## Publication
 
-**Quantifying Spatial Homogeneity of Urban Road System via Predictability of Graph Neural Networks.**
+**Quantifying spatial homogeneity of urban road networks via graph neural networks.**
 *Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Satish V Ukkusuri, Jianzhu Ma.* 
 Submitted to Nature Communications, 2020. 
 
 ## Requirements
-* Window system
+* Window System
 * Python 3.6
-* networkx 2.1 (Python package)
-* osmnx 0.16.1 (Python package)
+* NetworkX 2.1 (A Python package)
+* OSMnx 0.16.1 (A Python package)
 
 ## Directory Structure
 
-* **data-collection**: collect and preprocess the road network data for 30 cities in USA, Europe, and Asia. 
-* **road-prediction**: perform the link prediction on RNS using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and get F1 scores.
-* **road-classification**: implement the RNS classification and discover connection with F1 scores.
-* **association-analysis**: conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
-* **intercity-homogeneity**: learn RNS features on city A and test link prediction on city B, get the asymmetric intercity homogeneity. 
+* **data-collection**: Collect and preprocess the road network data for 30 cities in the United States, Europe, and Asia. 
+* **road-prediction**: Perform the link prediction on URN using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and compute F1 scores.
+* **road-classification**: Implement the URN classification and discover its connections with F1 scores.
+* **association-analysis**: Conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
+* **intercity-homogeneity**: Get the inter-city homogeneity matrix by learning RNS features on city A and testing link prediction on city B.
 
-## Demo
+## Result
 Training and testing.
 
 <p align="center">
@@ -49,11 +49,9 @@ Association analysis.
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/003.png" width="630" height="630">
 </p>
 
-Intercity homogeneity.
+Inter-city homogeneity.
 
 <p align="center">
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/mainFigures/004.png" width="630" height="630">
 </p>
-## Requirement
 
-We may refer to https://github.com/idekerlab/DCell/ to learn how to write the README file.
