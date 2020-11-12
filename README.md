@@ -13,7 +13,7 @@ geodatabase refinement, and urban transfer learning.
 ## Publication
 
 **Quantifying spatial homogeneity of urban road networks via graph neural networks.**
-*Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Satish V Ukkusuri*, Jianzhu Ma*.* 
+*Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Satish V Ukkusuri, Jianzhu Ma* 
 Submitted to Nature Communications, 2020. 
 
 ## Requirements
