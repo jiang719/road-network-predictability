@@ -24,10 +24,10 @@ It captures the multi-hop node neighborhood relationships, and has promising app
 ## Directory Structure
 
 * **data-collection**: Collect and preprocess the road network data for 30 cities in the US, Europe, and Asia. 
-* **road-prediction**: Perform the link prediction on URNs using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and compute F1 scores.
+* **intra-city-network-homogeneity**: Perform the link prediction on URNs using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and compute F1 scores.
 * **road-classification**: Implement the URN classification and discover its connections with F1 scores.
 * **association-analysis**: Conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
-* **intercity-homogeneity**: Get the inter-city homogeneity by learning URN features on city A and testing on city B.
+* **inter-city-network-homogeneity**: Get the inter-city homogeneity by learning URN features on city A and testing on city B.
 
 ## Results
 
