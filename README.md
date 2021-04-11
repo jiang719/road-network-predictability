@@ -1,19 +1,18 @@
-## Quantifying spatial homogeneity of urban road networks via graph neural networks
+## Urban road network homogeneity reveals maturity and inheritance of cities
 
-A graph neural network computing the spatial homogeneity index of an urban road network(URN) 
+A graph neural network computing the intra-city and inter-city network homogeneity of an urban road network(URN) 
 
 ## Introduction
 
-* Spatial homogeneity of a URN measures the similarity of "network style" between the partial network and the whole network. 
-It quantifies both the local and global structural properties of the URN, and has promising employments in congestion analysis, network optimization, 
-geodatabase refinement, and urban transfer learning.
-* This GitHub repository discusses a user-friendly approach to compute spatial homogeneity for URN worldwide. 
-* URN classification, URN SNDi calculation, social-economic factor relation analysis, intercity homogeneity analysis are also attached.  
+* The network homogeneity of URNs measures the similarity of intersection connectition styles between the partial network and the whole network. 
+It captures the multi-hop node neighborhood relationships, and has promising applications in urban science, network science, and urban computing.
+* This GitHub repository discusses a user-friendly approach to compute the network homogeneity of URNs worldwide. 
+* URN classification, URN SNDi calculation, social-economic factor relation analysis, inter-city homogeneity analysis are also attached.  
 
 ## Publication
 
-**Quantifying spatial homogeneity of urban road networks via graph neural networks.**
-*Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Satish V Ukkusuri, Jianzhu Ma*, 2020. 
+**Urban road network homogeneity reveals maturity and inheritance of cities**
+*Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusuri, Jianzhu Ma*, 2021. 
 
 ## Requirements
 * Window System
@@ -24,11 +23,11 @@ geodatabase refinement, and urban transfer learning.
 
 ## Directory Structure
 
-* **data-collection**: Collect and preprocess the road network data for 30 cities in the United States, Europe, and Asia. 
-* **road-prediction**: Perform the link prediction on URN using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and compute F1 scores.
+* **data-collection**: Collect and preprocess the road network data for 30 cities in the US, Europe, and Asia. 
+* **road-prediction**: Perform the link prediction on URNs using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and compute F1 scores.
 * **road-classification**: Implement the URN classification and discover its connections with F1 scores.
 * **association-analysis**: Conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
-* **intercity-homogeneity**: Get the inter-city homogeneity matrix by learning RNS features on city A and testing link prediction on city B.
+* **intercity-homogeneity**: Get the inter-city homogeneity by learning URN features on city A and testing on city B.
 
 ## Results
 
