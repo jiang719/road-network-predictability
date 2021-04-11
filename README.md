@@ -32,7 +32,7 @@ It captures the multi-hop node neighborhood relationships, and has promising app
 ## Results
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="630" height="560">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="666">
 </p>
 
 ## License
