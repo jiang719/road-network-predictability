@@ -4,7 +4,7 @@ A graph neural network computing the intra-city and inter-city network homogenei
 
 ## Introduction
 
-* The network homogeneity of URNs measures the similarity of intersection connectition styles between the partial network and the whole network. 
+* The network homogeneity of URNs measures the similarity of intersection connection styles between the partial network and the whole network. 
 It captures the multi-hop node neighborhood relationships, and has promising applications in urban science, network science, and urban computing.
 * This GitHub repository discusses a user-friendly approach to compute the network homogeneity of URNs worldwide. 
 * URN classification, URN SNDi calculation, social-economic factor relation analysis, inter-city homogeneity analysis are also attached.  
