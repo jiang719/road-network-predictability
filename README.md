@@ -1,6 +1,6 @@
 ## Urban road network homogeneity reveals maturity and inheritance of cities
 
-A graph neural network computing the intra-city and inter-city network homogeneity of an urban road network(URN) 
+A graph neural network computing the intra-city and inter-city network homogeneity of urban road networks (URNs) 
 
 ## Introduction
 
