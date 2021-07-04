@@ -1,17 +1,17 @@
-## Urban road network homogeneity reveals maturity and inheritance of cities
+## Spatial homogeneity of urban road networks reveals socioeconomic development and inter-city similarity via graph neural networks
 
 A graph neural network computing the intra-city and inter-city network homogeneity of urban road networks (URNs) 
 
 ## Introduction
 
-* The network homogeneity of URNs measures the similarity of intersection connection styles between the partial network and the whole network. 
+* The spatial homogeneity of URNs measures the similarity of intersection connection styles between the partial network and the whole network. 
 It captures the multi-hop node neighborhood relationships, and has promising applications in urban science, network science, and urban computing.
 * This GitHub repository discusses a user-friendly approach to compute the network homogeneity of URNs worldwide. 
-* URN classification, URN SNDi calculation, social-economic factor relation analysis, inter-city homogeneity analysis are also attached.  
+* URN classification, URN SNDi calculation, socioeconomic factor relation analysis, inter-city homogeneity analysis are also attached.  
 
 ## Publication
 
-**Urban road network homogeneity reveals maturity and inheritance of cities**
+**Spatial homogeneity of urban road networks reveals socioeconomic development and inter-city similarity via graph neural networks**
 *Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusuri, Jianzhu Ma*, 2021. 
 
 ## Requirements
