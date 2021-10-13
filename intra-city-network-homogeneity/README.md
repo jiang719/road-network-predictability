@@ -8,6 +8,8 @@ This setion is the implementation of road network prediction. We try 6 different
 * tester: code to test road network prediction models
 * utils: code to for data loader and analyzing the best threshold
 * figure1.defg_result: code to visualize the evaluation and comparison of different models
+* shifted_result: RGCN models' result on the same cities but the city networks are shifted by a little distance.
+* large_city_network_result: RGCN models' result on six cities with larger road network
 
 ## Training
 * To train Node2vec + Distmult model
