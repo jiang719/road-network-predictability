@@ -1,24 +1,24 @@
-## Spatial homogeneity of urban road networks reveals socioeconomic development and inter-city similarity via graph neural networks
+## Quantifying Spatial Homogeneity of Urban Road Networks via Graph Neural Networks
 
-A graph neural network computing the intra-city and inter-city network homogeneity of urban road networks (URNs) 
+A graph neural network computing the intra-city and inter-city spatial homogeneity of urban road networks (URNs) 
 
 ## Introduction
 
-* The spatial homogeneity of URNs measures the similarity of intersection connection styles between the partial network and the whole network. 
+* The spatial homogeneity of URNs measures the similarity of intersection connection styles between the subnetwork and the entire network. 
 It captures the multi-hop node neighborhood relationships, and has promising applications in urban science, network science, and urban computing.
 * This GitHub repository discusses a user-friendly approach to compute the network homogeneity of URNs worldwide. 
-* URN classification, URN SNDi calculation, socioeconomic factor relation analysis, inter-city homogeneity analysis are also attached.  
+* URN classification, URN NI calculation, socioeconomic factor relation analysis, inter-city homogeneity analysis are also attached.  
 
 ## Publication
 
-**Spatial homogeneity of urban road networks reveals socioeconomic development and inter-city similarity via graph neural networks**
+**Quantifying Spatial Homogeneity of Urban Road Networks via Graph Neural Networks**
 *Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusuri, Jianzhu Ma*, 2021. 
 
 ## Requirements
 * Window System
 * Python 3.6
 * NetworkX 2.1 
-* OSMnx 0.16.1
+* OSMnx 0.11.4
 * PyTorch 1.0 
 
 ## Directory Structure
