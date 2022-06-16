@@ -1,5 +1,6 @@
 ## Quantifying the Spatial Homogeneity of Urban Road Networks via Graph Neural Networks, Nature Machine Intelligence, 2022.
 (Publication DOI: 10.1038/s42256-022-00462-y)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5866593.svg)](https://doi.org/10.5281/zenodo.5866593)
 
 A graph neural network computing the intra-city and inter-city spatial homogeneity of urban road networks (URNs) 
 
