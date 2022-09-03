@@ -19,8 +19,11 @@ Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusu
 
 ## Journal/Media Coverage
 **Nature Machine Intelligence**: https://www.nature.com/articles/s42256-022-00476-6
+
 **Nature Computational Science**: https://www.nature.com/articles/s43588-022-00244-x
+
 **Tech Xplore**: https://techxplore.com/news/2022-05-graph-neural-networks-spatial-homogeneity.html
+
 **Peking University News**: https://news.pku.edu.cn/jxky/b7c965cbb640434ca109da42c94d7e39.htm
 
 ## Requirements
