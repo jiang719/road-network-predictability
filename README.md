@@ -42,14 +42,26 @@ Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusu
 * **inter-city-network-homogeneity**: Get the inter-city homogeneity by learning URN features on city A and testing on city B.
 
 ## Methods
+* a. Description of spatial homogeneity. 
+* b. A road network.   © OpenStreetMap contributors. 
+* c. Message-passing between two layers in the graph neural network (GNN).
+* d. Connecting strength S of a pair of nodes.
+* e. We define the road network spatial homogeneity as the F1 score of the best GNN model with a well-tuned strength threshold δ. 
+
+
 
 <p align="center">
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="666">
 </p>
 
-## Takeaway 1
+## Takeaway 1: the similarity between road networks in two cities.
+* We compute the spatial homogeneity by training the GNN model on road networks in city A, and testing it on road networks in city B.
+* We finally get 30*30=900 F1 scores for the following 30 cities.
+* Each entry in the following matrix represents the directional similarity of road networks in two cities.
+* Please go to the section **Transfer learning reveals intercity similarity** in our paper for deep interpretation.
+* For those who want to use our simialrity score in other socio-economic studies on global cities, please refer to **takeaway-1/F1-30-30.txt** to access these 30*30 values.
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/takeaway-1-similarity-between-two-cities/Figure4.png" width="666">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="555">
 </p>
 
 ## License
