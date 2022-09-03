@@ -1,0 +1,3600 @@
+-------------1-------------
+training city:  Milan
+testing city: Chicago
+0.543
+-------------2-------------
+training city:  Milan
+testing city: Philadelphia
+0.392
+-------------3-------------
+training city:  Milan
+testing city: Shanghai
+0.375
+-------------4-------------
+training city:  Milan
+testing city: Berlin
+0.423
+-------------5-------------
+training city:  Milan
+testing city: San Diego
+0.411
+-------------6-------------
+training city:  Milan
+testing city: Dallas
+0.413
+-------------7-------------
+training city:  Milan
+testing city: Munich
+0.409
+-------------8-------------
+training city:  Milan
+testing city: New York
+0.45
+-------------9-------------
+training city:  Milan
+testing city: San Antonio
+0.464
+-------------10-------------
+training city:  Milan
+testing city: Houston
+0.431
+-------------11-------------
+training city:  Milan
+testing city: Phoenix
+0.437
+-------------12-------------
+training city:  Milan
+testing city: Detroit
+0.448
+-------------13-------------
+training city:  Milan
+testing city: Los Angeles
+0.439
+-------------14-------------
+training city:  Milan
+testing city: Guangzhou
+0.293
+-------------15-------------
+training city:  Milan
+testing city: Beijing
+0.324
+-------------16-------------
+training city:  Milan
+testing city: Shenzhen
+0.362
+-------------17-------------
+training city:  Milan
+testing city: Hong Kong
+0.35
+-------------18-------------
+training city:  Milan
+testing city: Singapore
+0.343
+-------------19-------------
+training city:  Milan
+testing city: Delhi
+0.248
+-------------20-------------
+training city:  Milan
+testing city: Seoul
+0.289
+-------------21-------------
+training city:  Milan
+testing city: Osaka
+0.27
+-------------22-------------
+training city:  Milan
+testing city: Tokyo
+0.249
+-------------23-------------
+training city:  Milan
+testing city: Moscow
+0.301
+-------------24-------------
+training city:  Milan
+testing city: London
+0.32
+-------------25-------------
+training city:  Milan
+testing city: Stockholm
+0.321
+-------------26-------------
+training city:  Milan
+testing city: Madrid
+0.329
+-------------27-------------
+training city:  Milan
+testing city: Brussels
+0.346
+-------------28-------------
+training city:  Milan
+testing city: Milan
+0.363
+-------------29-------------
+training city:  Milan
+testing city: Amsterdam
+0.325
+-------------30-------------
+training city:  Milan
+testing city: Paris
+0.35
+-------------31-------------
+training city:  London
+testing city: Chicago
+0.55
+-------------32-------------
+training city:  London
+testing city: Philadelphia
+0.429
+-------------33-------------
+training city:  London
+testing city: Shanghai
+0.361
+-------------34-------------
+training city:  London
+testing city: Berlin
+0.427
+-------------35-------------
+training city:  London
+testing city: San Diego
+0.426
+-------------36-------------
+training city:  London
+testing city: Dallas
+0.409
+-------------37-------------
+training city:  London
+testing city: Munich
+0.395
+-------------38-------------
+training city:  London
+testing city: New York
+0.479
+-------------39-------------
+training city:  London
+testing city: San Antonio
+0.472
+-------------40-------------
+training city:  London
+testing city: Houston
+0.438
+-------------41-------------
+training city:  London
+testing city: Phoenix
+0.421
+-------------42-------------
+training city:  London
+testing city: Detroit
+0.459
+-------------43-------------
+training city:  London
+testing city: Los Angeles
+0.452
+-------------44-------------
+training city:  London
+testing city: Guangzhou
+0.277
+-------------45-------------
+training city:  London
+testing city: Beijing
+0.325
+-------------46-------------
+training city:  London
+testing city: Shenzhen
+0.327
+-------------47-------------
+training city:  London
+testing city: Hong Kong
+0.348
+-------------48-------------
+training city:  London
+testing city: Singapore
+0.343
+-------------49-------------
+training city:  London
+testing city: Delhi
+0.281
+-------------50-------------
+training city:  London
+testing city: Seoul
+0.322
+-------------51-------------
+training city:  London
+testing city: Osaka
+0.304
+-------------52-------------
+training city:  London
+testing city: Tokyo
+0.304
+-------------53-------------
+training city:  London
+testing city: Moscow
+0.32
+-------------54-------------
+training city:  London
+testing city: London
+0.337
+-------------55-------------
+training city:  London
+testing city: Stockholm
+0.34
+-------------56-------------
+training city:  London
+testing city: Madrid
+0.353
+-------------57-------------
+training city:  London
+testing city: Brussels
+0.375
+-------------58-------------
+training city:  London
+testing city: Milan
+0.376
+-------------59-------------
+training city:  London
+testing city: Amsterdam
+0.353
+-------------60-------------
+training city:  London
+testing city: Paris
+0.36
+-------------61-------------
+training city:  Delhi
+testing city: Chicago
+0.455
+-------------62-------------
+training city:  Delhi
+testing city: Philadelphia
+0.415
+-------------63-------------
+training city:  Delhi
+testing city: Shanghai
+0.355
+-------------64-------------
+training city:  Delhi
+testing city: Berlin
+0.417
+-------------65-------------
+training city:  Delhi
+testing city: San Diego
+0.398
+-------------66-------------
+training city:  Delhi
+testing city: Dallas
+0.381
+-------------67-------------
+training city:  Delhi
+testing city: Munich
+0.415
+-------------68-------------
+training city:  Delhi
+testing city: New York
+0.43
+-------------69-------------
+training city:  Delhi
+testing city: San Antonio
+0.422
+-------------70-------------
+training city:  Delhi
+testing city: Houston
+0.391
+-------------71-------------
+training city:  Delhi
+testing city: Phoenix
+0.41
+-------------72-------------
+training city:  Delhi
+testing city: Detroit
+0.405
+-------------73-------------
+training city:  Delhi
+testing city: Los Angeles
+0.411
+-------------74-------------
+training city:  Delhi
+testing city: Guangzhou
+0.295
+-------------75-------------
+training city:  Delhi
+testing city: Beijing
+0.318
+-------------76-------------
+training city:  Delhi
+testing city: Shenzhen
+0.362
+-------------77-------------
+training city:  Delhi
+testing city: Hong Kong
+0.34
+-------------78-------------
+training city:  Delhi
+testing city: Singapore
+0.328
+-------------79-------------
+training city:  Delhi
+testing city: Delhi
+0.285
+-------------80-------------
+training city:  Delhi
+testing city: Seoul
+0.321
+-------------81-------------
+training city:  Delhi
+testing city: Osaka
+0.307
+-------------82-------------
+training city:  Delhi
+testing city: Tokyo
+0.306
+-------------83-------------
+training city:  Delhi
+testing city: Moscow
+0.312
+-------------84-------------
+training city:  Delhi
+testing city: London
+0.33
+-------------85-------------
+training city:  Delhi
+testing city: Stockholm
+0.338
+-------------86-------------
+training city:  Delhi
+testing city: Madrid
+0.358
+-------------87-------------
+training city:  Delhi
+testing city: Brussels
+0.347
+-------------88-------------
+training city:  Delhi
+testing city: Milan
+0.346
+-------------89-------------
+training city:  Delhi
+testing city: Amsterdam
+0.339
+-------------90-------------
+training city:  Delhi
+testing city: Paris
+0.345
+-------------91-------------
+training city:  Paris
+testing city: Chicago
+0.552
+-------------92-------------
+training city:  Paris
+testing city: Philadelphia
+0.449
+-------------93-------------
+training city:  Paris
+testing city: Shanghai
+0.431
+-------------94-------------
+training city:  Paris
+testing city: Berlin
+0.45
+-------------95-------------
+training city:  Paris
+testing city: San Diego
+0.453
+-------------96-------------
+training city:  Paris
+testing city: Dallas
+0.467
+-------------97-------------
+training city:  Paris
+testing city: Munich
+0.448
+-------------98-------------
+training city:  Paris
+testing city: New York
+0.504
+-------------99-------------
+training city:  Paris
+testing city: San Antonio
+0.478
+-------------100-------------
+training city:  Paris
+testing city: Houston
+0.459
+-------------101-------------
+training city:  Paris
+testing city: Phoenix
+0.437
+-------------102-------------
+training city:  Paris
+testing city: Detroit
+0.471
+-------------103-------------
+training city:  Paris
+testing city: Los Angeles
+0.477
+-------------104-------------
+training city:  Paris
+testing city: Guangzhou
+0.289
+-------------105-------------
+training city:  Paris
+testing city: Beijing
+0.352
+-------------106-------------
+training city:  Paris
+testing city: Shenzhen
+0.355
+-------------107-------------
+training city:  Paris
+testing city: Hong Kong
+0.356
+-------------108-------------
+training city:  Paris
+testing city: Singapore
+0.321
+-------------109-------------
+training city:  Paris
+testing city: Delhi
+0.291
+-------------110-------------
+training city:  Paris
+testing city: Seoul
+0.319
+-------------111-------------
+training city:  Paris
+testing city: Osaka
+0.318
+-------------112-------------
+training city:  Paris
+testing city: Tokyo
+0.301
+-------------113-------------
+training city:  Paris
+testing city: Moscow
+0.37
+-------------114-------------
+training city:  Paris
+testing city: London
+0.347
+-------------115-------------
+training city:  Paris
+testing city: Stockholm
+0.367
+-------------116-------------
+training city:  Paris
+testing city: Madrid
+0.374
+-------------117-------------
+training city:  Paris
+testing city: Brussels
+0.408
+-------------118-------------
+training city:  Paris
+testing city: Milan
+0.399
+-------------119-------------
+training city:  Paris
+testing city: Amsterdam
+0.382
+-------------120-------------
+training city:  Paris
+testing city: Paris
+0.388
+-------------121-------------
+training city:  Madrid
+testing city: Chicago
+0.55
+-------------122-------------
+training city:  Madrid
+testing city: Philadelphia
+0.444
+-------------123-------------
+training city:  Madrid
+testing city: Shanghai
+0.442
+-------------124-------------
+training city:  Madrid
+testing city: Berlin
+0.453
+-------------125-------------
+training city:  Madrid
+testing city: San Diego
+0.441
+-------------126-------------
+training city:  Madrid
+testing city: Dallas
+0.436
+-------------127-------------
+training city:  Madrid
+testing city: Munich
+0.43
+-------------128-------------
+training city:  Madrid
+testing city: New York
+0.493
+-------------129-------------
+training city:  Madrid
+testing city: San Antonio
+0.479
+-------------130-------------
+training city:  Madrid
+testing city: Houston
+0.448
+-------------131-------------
+training city:  Madrid
+testing city: Phoenix
+0.448
+-------------132-------------
+training city:  Madrid
+testing city: Detroit
+0.471
+-------------133-------------
+training city:  Madrid
+testing city: Los Angeles
+0.451
+-------------134-------------
+training city:  Madrid
+testing city: Guangzhou
+0.285
+-------------135-------------
+training city:  Madrid
+testing city: Beijing
+0.355
+-------------136-------------
+training city:  Madrid
+testing city: Shenzhen
+0.356
+-------------137-------------
+training city:  Madrid
+testing city: Hong Kong
+0.355
+-------------138-------------
+training city:  Madrid
+testing city: Singapore
+0.346
+-------------139-------------
+training city:  Madrid
+testing city: Delhi
+0.287
+-------------140-------------
+training city:  Madrid
+testing city: Seoul
+0.33
+-------------141-------------
+training city:  Madrid
+testing city: Osaka
+0.299
+-------------142-------------
+training city:  Madrid
+testing city: Tokyo
+0.305
+-------------143-------------
+training city:  Madrid
+testing city: Moscow
+0.343
+-------------144-------------
+training city:  Madrid
+testing city: London
+0.34
+-------------145-------------
+training city:  Madrid
+testing city: Stockholm
+0.351
+-------------146-------------
+training city:  Madrid
+testing city: Madrid
+0.37
+-------------147-------------
+training city:  Madrid
+testing city: Brussels
+0.372
+-------------148-------------
+training city:  Madrid
+testing city: Milan
+0.36
+-------------149-------------
+training city:  Madrid
+testing city: Amsterdam
+0.374
+-------------150-------------
+training city:  Madrid
+testing city: Paris
+0.372
+-------------151-------------
+training city:  Dallas
+testing city: Chicago
+0.528
+-------------152-------------
+training city:  Dallas
+testing city: Philadelphia
+0.362
+-------------153-------------
+training city:  Dallas
+testing city: Shanghai
+0.398
+-------------154-------------
+training city:  Dallas
+testing city: Berlin
+0.428
+-------------155-------------
+training city:  Dallas
+testing city: San Diego
+0.407
+-------------156-------------
+training city:  Dallas
+testing city: Dallas
+0.416
+-------------157-------------
+training city:  Dallas
+testing city: Munich
+0.417
+-------------158-------------
+training city:  Dallas
+testing city: New York
+0.451
+-------------159-------------
+training city:  Dallas
+testing city: San Antonio
+0.475
+-------------160-------------
+training city:  Dallas
+testing city: Houston
+0.416
+-------------161-------------
+training city:  Dallas
+testing city: Phoenix
+0.434
+-------------162-------------
+training city:  Dallas
+testing city: Detroit
+0.46
+-------------163-------------
+training city:  Dallas
+testing city: Los Angeles
+0.463
+-------------164-------------
+training city:  Dallas
+testing city: Guangzhou
+0.274
+-------------165-------------
+training city:  Dallas
+testing city: Beijing
+0.376
+-------------166-------------
+training city:  Dallas
+testing city: Shenzhen
+0.357
+-------------167-------------
+training city:  Dallas
+testing city: Hong Kong
+0.35
+-------------168-------------
+training city:  Dallas
+testing city: Singapore
+0.305
+-------------169-------------
+training city:  Dallas
+testing city: Delhi
+0.233
+-------------170-------------
+training city:  Dallas
+testing city: Seoul
+0.269
+-------------171-------------
+training city:  Dallas
+testing city: Osaka
+0.225
+-------------172-------------
+training city:  Dallas
+testing city: Tokyo
+0.223
+-------------173-------------
+training city:  Dallas
+testing city: Moscow
+0.382
+-------------174-------------
+training city:  Dallas
+testing city: London
+0.297
+-------------175-------------
+training city:  Dallas
+testing city: Stockholm
+0.338
+-------------176-------------
+training city:  Dallas
+testing city: Madrid
+0.293
+-------------177-------------
+training city:  Dallas
+testing city: Brussels
+0.321
+-------------178-------------
+training city:  Dallas
+testing city: Milan
+0.346
+-------------179-------------
+training city:  Dallas
+testing city: Amsterdam
+0.297
+-------------180-------------
+training city:  Dallas
+testing city: Paris
+0.327
+-------------181-------------
+training city:  San Antonio
+testing city: Chicago
+0.622
+-------------182-------------
+training city:  San Antonio
+testing city: Philadelphia
+0.425
+-------------183-------------
+training city:  San Antonio
+testing city: Shanghai
+0.448
+-------------184-------------
+training city:  San Antonio
+testing city: Berlin
+0.455
+-------------185-------------
+training city:  San Antonio
+testing city: San Diego
+0.457
+-------------186-------------
+training city:  San Antonio
+testing city: Dallas
+0.449
+-------------187-------------
+training city:  San Antonio
+testing city: Munich
+0.454
+-------------188-------------
+training city:  San Antonio
+testing city: New York
+0.488
+-------------189-------------
+training city:  San Antonio
+testing city: San Antonio
+0.561
+-------------190-------------
+training city:  San Antonio
+testing city: Houston
+0.493
+-------------191-------------
+training city:  San Antonio
+testing city: Phoenix
+0.485
+-------------192-------------
+training city:  San Antonio
+testing city: Detroit
+0.491
+-------------193-------------
+training city:  San Antonio
+testing city: Los Angeles
+0.507
+-------------194-------------
+training city:  San Antonio
+testing city: Guangzhou
+0.291
+-------------195-------------
+training city:  San Antonio
+testing city: Beijing
+0.374
+-------------196-------------
+training city:  San Antonio
+testing city: Shenzhen
+0.381
+-------------197-------------
+training city:  San Antonio
+testing city: Hong Kong
+0.384
+-------------198-------------
+training city:  San Antonio
+testing city: Singapore
+0.328
+-------------199-------------
+training city:  San Antonio
+testing city: Delhi
+0.257
+-------------200-------------
+training city:  San Antonio
+testing city: Seoul
+0.305
+-------------201-------------
+training city:  San Antonio
+testing city: Osaka
+0.294
+-------------202-------------
+training city:  San Antonio
+testing city: Tokyo
+0.281
+-------------203-------------
+training city:  San Antonio
+testing city: Moscow
+0.374
+-------------204-------------
+training city:  San Antonio
+testing city: London
+0.323
+-------------205-------------
+training city:  San Antonio
+testing city: Stockholm
+0.339
+-------------206-------------
+training city:  San Antonio
+testing city: Madrid
+0.346
+-------------207-------------
+training city:  San Antonio
+testing city: Brussels
+0.369
+-------------208-------------
+training city:  San Antonio
+testing city: Milan
+0.362
+-------------209-------------
+training city:  San Antonio
+testing city: Amsterdam
+0.353
+-------------210-------------
+training city:  San Antonio
+testing city: Paris
+0.338
+-------------211-------------
+training city:  Detroit
+testing city: Chicago
+0.657
+-------------212-------------
+training city:  Detroit
+testing city: Philadelphia
+0.41
+-------------213-------------
+training city:  Detroit
+testing city: Shanghai
+0.482
+-------------214-------------
+training city:  Detroit
+testing city: Berlin
+0.483
+-------------215-------------
+training city:  Detroit
+testing city: San Diego
+0.456
+-------------216-------------
+training city:  Detroit
+testing city: Dallas
+0.459
+-------------217-------------
+training city:  Detroit
+testing city: Munich
+0.456
+-------------218-------------
+training city:  Detroit
+testing city: New York
+0.504
+-------------219-------------
+training city:  Detroit
+testing city: San Antonio
+0.506
+-------------220-------------
+training city:  Detroit
+testing city: Houston
+0.484
+-------------221-------------
+training city:  Detroit
+testing city: Phoenix
+0.48
+-------------222-------------
+training city:  Detroit
+testing city: Detroit
+0.534
+-------------223-------------
+training city:  Detroit
+testing city: Los Angeles
+0.527
+-------------224-------------
+training city:  Detroit
+testing city: Guangzhou
+0.303
+-------------225-------------
+training city:  Detroit
+testing city: Beijing
+0.373
+-------------226-------------
+training city:  Detroit
+testing city: Shenzhen
+0.355
+-------------227-------------
+training city:  Detroit
+testing city: Hong Kong
+0.37
+-------------228-------------
+training city:  Detroit
+testing city: Singapore
+0.323
+-------------229-------------
+training city:  Detroit
+testing city: Delhi
+0.262
+-------------230-------------
+training city:  Detroit
+testing city: Seoul
+0.294
+-------------231-------------
+training city:  Detroit
+testing city: Osaka
+0.285
+-------------232-------------
+training city:  Detroit
+testing city: Tokyo
+0.282
+-------------233-------------
+training city:  Detroit
+testing city: Moscow
+0.4
+-------------234-------------
+training city:  Detroit
+testing city: London
+0.318
+-------------235-------------
+training city:  Detroit
+testing city: Stockholm
+0.343
+-------------236-------------
+training city:  Detroit
+testing city: Madrid
+0.347
+-------------237-------------
+training city:  Detroit
+testing city: Brussels
+0.356
+-------------238-------------
+training city:  Detroit
+testing city: Milan
+0.37
+-------------239-------------
+training city:  Detroit
+testing city: Amsterdam
+0.349
+-------------240-------------
+training city:  Detroit
+testing city: Paris
+0.35
+-------------241-------------
+training city:  Los Angeles
+testing city: Chicago
+0.652
+-------------242-------------
+training city:  Los Angeles
+testing city: Philadelphia
+0.393
+-------------243-------------
+training city:  Los Angeles
+testing city: Shanghai
+0.434
+-------------244-------------
+training city:  Los Angeles
+testing city: Berlin
+0.468
+-------------245-------------
+training city:  Los Angeles
+testing city: San Diego
+0.472
+-------------246-------------
+training city:  Los Angeles
+testing city: Dallas
+0.459
+-------------247-------------
+training city:  Los Angeles
+testing city: Munich
+0.432
+-------------248-------------
+training city:  Los Angeles
+testing city: New York
+0.481
+-------------249-------------
+training city:  Los Angeles
+testing city: San Antonio
+0.548
+-------------250-------------
+training city:  Los Angeles
+testing city: Houston
+0.484
+-------------251-------------
+training city:  Los Angeles
+testing city: Phoenix
+0.503
+-------------252-------------
+training city:  Los Angeles
+testing city: Detroit
+0.507
+-------------253-------------
+training city:  Los Angeles
+testing city: Los Angeles
+0.52
+-------------254-------------
+training city:  Los Angeles
+testing city: Guangzhou
+0.287
+-------------255-------------
+training city:  Los Angeles
+testing city: Beijing
+0.382
+-------------256-------------
+training city:  Los Angeles
+testing city: Shenzhen
+0.37
+-------------257-------------
+training city:  Los Angeles
+testing city: Hong Kong
+0.36
+-------------258-------------
+training city:  Los Angeles
+testing city: Singapore
+0.317
+-------------259-------------
+training city:  Los Angeles
+testing city: Delhi
+0.231
+-------------260-------------
+training city:  Los Angeles
+testing city: Seoul
+0.276
+-------------261-------------
+training city:  Los Angeles
+testing city: Osaka
+0.252
+-------------262-------------
+training city:  Los Angeles
+testing city: Tokyo
+0.246
+-------------263-------------
+training city:  Los Angeles
+testing city: Moscow
+0.385
+-------------264-------------
+training city:  Los Angeles
+testing city: London
+0.303
+-------------265-------------
+training city:  Los Angeles
+testing city: Stockholm
+0.312
+-------------266-------------
+training city:  Los Angeles
+testing city: Madrid
+0.327
+-------------267-------------
+training city:  Los Angeles
+testing city: Brussels
+0.333
+-------------268-------------
+training city:  Los Angeles
+testing city: Milan
+0.329
+-------------269-------------
+training city:  Los Angeles
+testing city: Amsterdam
+0.317
+-------------270-------------
+training city:  Los Angeles
+testing city: Paris
+0.322
+-------------271-------------
+training city:  Chicago
+testing city: Chicago
+0.692
+-------------272-------------
+training city:  Chicago
+testing city: Philadelphia
+0.373
+-------------273-------------
+training city:  Chicago
+testing city: Shanghai
+0.415
+-------------274-------------
+training city:  Chicago
+testing city: Berlin
+0.439
+-------------275-------------
+training city:  Chicago
+testing city: San Diego
+0.455
+-------------276-------------
+training city:  Chicago
+testing city: Dallas
+0.429
+-------------277-------------
+training city:  Chicago
+testing city: Munich
+0.407
+-------------278-------------
+training city:  Chicago
+testing city: New York
+0.439
+-------------279-------------
+training city:  Chicago
+testing city: San Antonio
+0.538
+-------------280-------------
+training city:  Chicago
+testing city: Houston
+0.492
+-------------281-------------
+training city:  Chicago
+testing city: Phoenix
+0.515
+-------------282-------------
+training city:  Chicago
+testing city: Detroit
+0.505
+-------------283-------------
+training city:  Chicago
+testing city: Los Angeles
+0.541
+-------------284-------------
+training city:  Chicago
+testing city: Guangzhou
+0.287
+-------------285-------------
+training city:  Chicago
+testing city: Beijing
+0.371
+-------------286-------------
+training city:  Chicago
+testing city: Shenzhen
+0.375
+-------------287-------------
+training city:  Chicago
+testing city: Hong Kong
+0.364
+-------------288-------------
+training city:  Chicago
+testing city: Singapore
+0.334
+-------------289-------------
+training city:  Chicago
+testing city: Delhi
+0.231
+-------------290-------------
+training city:  Chicago
+testing city: Seoul
+0.292
+-------------291-------------
+training city:  Chicago
+testing city: Osaka
+0.287
+-------------292-------------
+training city:  Chicago
+testing city: Tokyo
+0.281
+-------------293-------------
+training city:  Chicago
+testing city: Moscow
+0.34
+-------------294-------------
+training city:  Chicago
+testing city: London
+0.3
+-------------295-------------
+training city:  Chicago
+testing city: Stockholm
+0.28
+-------------296-------------
+training city:  Chicago
+testing city: Madrid
+0.325
+-------------297-------------
+training city:  Chicago
+testing city: Brussels
+0.312
+-------------298-------------
+training city:  Chicago
+testing city: Milan
+0.335
+-------------299-------------
+training city:  Chicago
+testing city: Amsterdam
+0.317
+-------------300-------------
+training city:  Chicago
+testing city: Paris
+0.306
+-------------301-------------
+training city:  New York
+testing city: Chicago
+0.632
+-------------302-------------
+training city:  New York
+testing city: Philadelphia
+0.491
+-------------303-------------
+training city:  New York
+testing city: Shanghai
+0.464
+-------------304-------------
+training city:  New York
+testing city: Berlin
+0.499
+-------------305-------------
+training city:  New York
+testing city: San Diego
+0.498
+-------------306-------------
+training city:  New York
+testing city: Dallas
+0.484
+-------------307-------------
+training city:  New York
+testing city: Munich
+0.507
+-------------308-------------
+training city:  New York
+testing city: New York
+0.565
+-------------309-------------
+training city:  New York
+testing city: San Antonio
+0.545
+-------------310-------------
+training city:  New York
+testing city: Houston
+0.527
+-------------311-------------
+training city:  New York
+testing city: Phoenix
+0.533
+-------------312-------------
+training city:  New York
+testing city: Detroit
+0.534
+-------------313-------------
+training city:  New York
+testing city: Los Angeles
+0.55
+-------------314-------------
+training city:  New York
+testing city: Guangzhou
+0.307
+-------------315-------------
+training city:  New York
+testing city: Beijing
+0.374
+-------------316-------------
+training city:  New York
+testing city: Shenzhen
+0.384
+-------------317-------------
+training city:  New York
+testing city: Hong Kong
+0.35
+-------------318-------------
+training city:  New York
+testing city: Singapore
+0.373
+-------------319-------------
+training city:  New York
+testing city: Delhi
+0.295
+-------------320-------------
+training city:  New York
+testing city: Seoul
+0.333
+-------------321-------------
+training city:  New York
+testing city: Osaka
+0.322
+-------------322-------------
+training city:  New York
+testing city: Tokyo
+0.31
+-------------323-------------
+training city:  New York
+testing city: Moscow
+0.4
+-------------324-------------
+training city:  New York
+testing city: London
+0.354
+-------------325-------------
+training city:  New York
+testing city: Stockholm
+0.368
+-------------326-------------
+training city:  New York
+testing city: Madrid
+0.404
+-------------327-------------
+training city:  New York
+testing city: Brussels
+0.402
+-------------328-------------
+training city:  New York
+testing city: Milan
+0.428
+-------------329-------------
+training city:  New York
+testing city: Amsterdam
+0.402
+-------------330-------------
+training city:  New York
+testing city: Paris
+0.416
+-------------331-------------
+training city:  Houston
+testing city: Chicago
+0.655
+-------------332-------------
+training city:  Houston
+testing city: Philadelphia
+0.488
+-------------333-------------
+training city:  Houston
+testing city: Shanghai
+0.461
+-------------334-------------
+training city:  Houston
+testing city: Berlin
+0.492
+-------------335-------------
+training city:  Houston
+testing city: San Diego
+0.498
+-------------336-------------
+training city:  Houston
+testing city: Dallas
+0.497
+-------------337-------------
+training city:  Houston
+testing city: Munich
+0.471
+-------------338-------------
+training city:  Houston
+testing city: New York
+0.549
+-------------339-------------
+training city:  Houston
+testing city: San Antonio
+0.576
+-------------340-------------
+training city:  Houston
+testing city: Houston
+0.543
+-------------341-------------
+training city:  Houston
+testing city: Phoenix
+0.51
+-------------342-------------
+training city:  Houston
+testing city: Detroit
+0.526
+-------------343-------------
+training city:  Houston
+testing city: Los Angeles
+0.539
+-------------344-------------
+training city:  Houston
+testing city: Guangzhou
+0.293
+-------------345-------------
+training city:  Houston
+testing city: Beijing
+0.384
+-------------346-------------
+training city:  Houston
+testing city: Shenzhen
+0.402
+-------------347-------------
+training city:  Houston
+testing city: Hong Kong
+0.388
+-------------348-------------
+training city:  Houston
+testing city: Singapore
+0.332
+-------------349-------------
+training city:  Houston
+testing city: Delhi
+0.301
+-------------350-------------
+training city:  Houston
+testing city: Seoul
+0.342
+-------------351-------------
+training city:  Houston
+testing city: Osaka
+0.317
+-------------352-------------
+training city:  Houston
+testing city: Tokyo
+0.31
+-------------353-------------
+training city:  Houston
+testing city: Moscow
+0.423
+-------------354-------------
+training city:  Houston
+testing city: London
+0.368
+-------------355-------------
+training city:  Houston
+testing city: Stockholm
+0.393
+-------------356-------------
+training city:  Houston
+testing city: Madrid
+0.392
+-------------357-------------
+training city:  Houston
+testing city: Brussels
+0.404
+-------------358-------------
+training city:  Houston
+testing city: Milan
+0.424
+-------------359-------------
+training city:  Houston
+testing city: Amsterdam
+0.383
+-------------360-------------
+training city:  Houston
+testing city: Paris
+0.407
+-------------361-------------
+training city:  Philadelphia
+testing city: Chicago
+0.608
+-------------362-------------
+training city:  Philadelphia
+testing city: Philadelphia
+0.523
+-------------363-------------
+training city:  Philadelphia
+testing city: Shanghai
+0.482
+-------------364-------------
+training city:  Philadelphia
+testing city: Berlin
+0.493
+-------------365-------------
+training city:  Philadelphia
+testing city: San Diego
+0.5
+-------------366-------------
+training city:  Philadelphia
+testing city: Dallas
+0.498
+-------------367-------------
+training city:  Philadelphia
+testing city: Munich
+0.503
+-------------368-------------
+training city:  Philadelphia
+testing city: New York
+0.554
+-------------369-------------
+training city:  Philadelphia
+testing city: San Antonio
+0.551
+-------------370-------------
+training city:  Philadelphia
+testing city: Houston
+0.521
+-------------371-------------
+training city:  Philadelphia
+testing city: Phoenix
+0.508
+-------------372-------------
+training city:  Philadelphia
+testing city: Detroit
+0.522
+-------------373-------------
+training city:  Philadelphia
+testing city: Los Angeles
+0.537
+-------------374-------------
+training city:  Philadelphia
+testing city: Guangzhou
+0.296
+-------------375-------------
+training city:  Philadelphia
+testing city: Beijing
+0.386
+-------------376-------------
+training city:  Philadelphia
+testing city: Shenzhen
+0.408
+-------------377-------------
+training city:  Philadelphia
+testing city: Hong Kong
+0.384
+-------------378-------------
+training city:  Philadelphia
+testing city: Singapore
+0.356
+-------------379-------------
+training city:  Philadelphia
+testing city: Delhi
+0.326
+-------------380-------------
+training city:  Philadelphia
+testing city: Seoul
+0.382
+-------------381-------------
+training city:  Philadelphia
+testing city: Osaka
+0.376
+-------------382-------------
+training city:  Philadelphia
+testing city: Tokyo
+0.371
+-------------383-------------
+training city:  Philadelphia
+testing city: Moscow
+0.404
+-------------384-------------
+training city:  Philadelphia
+testing city: London
+0.381
+-------------385-------------
+training city:  Philadelphia
+testing city: Stockholm
+0.384
+-------------386-------------
+training city:  Philadelphia
+testing city: Madrid
+0.436
+-------------387-------------
+training city:  Philadelphia
+testing city: Brussels
+0.428
+-------------388-------------
+training city:  Philadelphia
+testing city: Milan
+0.431
+-------------389-------------
+training city:  Philadelphia
+testing city: Amsterdam
+0.411
+-------------390-------------
+training city:  Philadelphia
+testing city: Paris
+0.42
+-------------391-------------
+training city:  Tokyo
+testing city: Chicago
+0.557
+-------------392-------------
+training city:  Tokyo
+testing city: Philadelphia
+0.495
+-------------393-------------
+training city:  Tokyo
+testing city: Shanghai
+0.439
+-------------394-------------
+training city:  Tokyo
+testing city: Berlin
+0.471
+-------------395-------------
+training city:  Tokyo
+testing city: San Diego
+0.443
+-------------396-------------
+training city:  Tokyo
+testing city: Dallas
+0.458
+-------------397-------------
+training city:  Tokyo
+testing city: Munich
+0.467
+-------------398-------------
+training city:  Tokyo
+testing city: New York
+0.52
+-------------399-------------
+training city:  Tokyo
+testing city: San Antonio
+0.522
+-------------400-------------
+training city:  Tokyo
+testing city: Houston
+0.482
+-------------401-------------
+training city:  Tokyo
+testing city: Phoenix
+0.459
+-------------402-------------
+training city:  Tokyo
+testing city: Detroit
+0.472
+-------------403-------------
+training city:  Tokyo
+testing city: Los Angeles
+0.477
+-------------404-------------
+training city:  Tokyo
+testing city: Guangzhou
+0.285
+-------------405-------------
+training city:  Tokyo
+testing city: Beijing
+0.339
+-------------406-------------
+training city:  Tokyo
+testing city: Shenzhen
+0.362
+-------------407-------------
+training city:  Tokyo
+testing city: Hong Kong
+0.345
+-------------408-------------
+training city:  Tokyo
+testing city: Singapore
+0.343
+-------------409-------------
+training city:  Tokyo
+testing city: Delhi
+0.321
+-------------410-------------
+training city:  Tokyo
+testing city: Seoul
+0.398
+-------------411-------------
+training city:  Tokyo
+testing city: Osaka
+0.428
+-------------412-------------
+training city:  Tokyo
+testing city: Tokyo
+0.43
+-------------413-------------
+training city:  Tokyo
+testing city: Moscow
+0.416
+-------------414-------------
+training city:  Tokyo
+testing city: London
+0.364
+-------------415-------------
+training city:  Tokyo
+testing city: Stockholm
+0.379
+-------------416-------------
+training city:  Tokyo
+testing city: Madrid
+0.428
+-------------417-------------
+training city:  Tokyo
+testing city: Brussels
+0.4
+-------------418-------------
+training city:  Tokyo
+testing city: Milan
+0.409
+-------------419-------------
+training city:  Tokyo
+testing city: Amsterdam
+0.397
+-------------420-------------
+training city:  Tokyo
+testing city: Paris
+0.399
+-------------421-------------
+training city:  Osaka
+testing city: Chicago
+0.554
+-------------422-------------
+training city:  Osaka
+testing city: Philadelphia
+0.5
+-------------423-------------
+training city:  Osaka
+testing city: Shanghai
+0.409
+-------------424-------------
+training city:  Osaka
+testing city: Berlin
+0.463
+-------------425-------------
+training city:  Osaka
+testing city: San Diego
+0.438
+-------------426-------------
+training city:  Osaka
+testing city: Dallas
+0.469
+-------------427-------------
+training city:  Osaka
+testing city: Munich
+0.459
+-------------428-------------
+training city:  Osaka
+testing city: New York
+0.506
+-------------429-------------
+training city:  Osaka
+testing city: San Antonio
+0.524
+-------------430-------------
+training city:  Osaka
+testing city: Houston
+0.478
+-------------431-------------
+training city:  Osaka
+testing city: Phoenix
+0.471
+-------------432-------------
+training city:  Osaka
+testing city: Detroit
+0.458
+-------------433-------------
+training city:  Osaka
+testing city: Los Angeles
+0.481
+-------------434-------------
+training city:  Osaka
+testing city: Guangzhou
+0.289
+-------------435-------------
+training city:  Osaka
+testing city: Beijing
+0.339
+-------------436-------------
+training city:  Osaka
+testing city: Shenzhen
+0.367
+-------------437-------------
+training city:  Osaka
+testing city: Hong Kong
+0.353
+-------------438-------------
+training city:  Osaka
+testing city: Singapore
+0.345
+-------------439-------------
+training city:  Osaka
+testing city: Delhi
+0.328
+-------------440-------------
+training city:  Osaka
+testing city: Seoul
+0.395
+-------------441-------------
+training city:  Osaka
+testing city: Osaka
+0.435
+-------------442-------------
+training city:  Osaka
+testing city: Tokyo
+0.429
+-------------443-------------
+training city:  Osaka
+testing city: Moscow
+0.391
+-------------444-------------
+training city:  Osaka
+testing city: London
+0.364
+-------------445-------------
+training city:  Osaka
+testing city: Stockholm
+0.365
+-------------446-------------
+training city:  Osaka
+testing city: Madrid
+0.429
+-------------447-------------
+training city:  Osaka
+testing city: Brussels
+0.386
+-------------448-------------
+training city:  Osaka
+testing city: Milan
+0.421
+-------------449-------------
+training city:  Osaka
+testing city: Amsterdam
+0.391
+-------------450-------------
+training city:  Osaka
+testing city: Paris
+0.399
+-------------451-------------
+training city:  Seoul
+testing city: Chicago
+0.566
+-------------452-------------
+training city:  Seoul
+testing city: Philadelphia
+0.493
+-------------453-------------
+training city:  Seoul
+testing city: Shanghai
+0.428
+-------------454-------------
+training city:  Seoul
+testing city: Berlin
+0.466
+-------------455-------------
+training city:  Seoul
+testing city: San Diego
+0.453
+-------------456-------------
+training city:  Seoul
+testing city: Dallas
+0.469
+-------------457-------------
+training city:  Seoul
+testing city: Munich
+0.463
+-------------458-------------
+training city:  Seoul
+testing city: New York
+0.536
+-------------459-------------
+training city:  Seoul
+testing city: San Antonio
+0.5
+-------------460-------------
+training city:  Seoul
+testing city: Houston
+0.486
+-------------461-------------
+training city:  Seoul
+testing city: Phoenix
+0.448
+-------------462-------------
+training city:  Seoul
+testing city: Detroit
+0.482
+-------------463-------------
+training city:  Seoul
+testing city: Los Angeles
+0.487
+-------------464-------------
+training city:  Seoul
+testing city: Guangzhou
+0.286
+-------------465-------------
+training city:  Seoul
+testing city: Beijing
+0.34
+-------------466-------------
+training city:  Seoul
+testing city: Shenzhen
+0.361
+-------------467-------------
+training city:  Seoul
+testing city: Hong Kong
+0.355
+-------------468-------------
+training city:  Seoul
+testing city: Singapore
+0.335
+-------------469-------------
+training city:  Seoul
+testing city: Delhi
+0.32
+-------------470-------------
+training city:  Seoul
+testing city: Seoul
+0.39
+-------------471-------------
+training city:  Seoul
+testing city: Osaka
+0.399
+-------------472-------------
+training city:  Seoul
+testing city: Tokyo
+0.394
+-------------473-------------
+training city:  Seoul
+testing city: Moscow
+0.372
+-------------474-------------
+training city:  Seoul
+testing city: London
+0.366
+-------------475-------------
+training city:  Seoul
+testing city: Stockholm
+0.363
+-------------476-------------
+training city:  Seoul
+testing city: Madrid
+0.425
+-------------477-------------
+training city:  Seoul
+testing city: Brussels
+0.394
+-------------478-------------
+training city:  Seoul
+testing city: Milan
+0.414
+-------------479-------------
+training city:  Seoul
+testing city: Amsterdam
+0.401
+-------------480-------------
+training city:  Seoul
+testing city: Paris
+0.398
+-------------481-------------
+training city:  Munich
+testing city: Chicago
+0.446
+-------------482-------------
+training city:  Munich
+testing city: Philadelphia
+0.319
+-------------483-------------
+training city:  Munich
+testing city: Shanghai
+0.371
+-------------484-------------
+training city:  Munich
+testing city: Berlin
+0.378
+-------------485-------------
+training city:  Munich
+testing city: San Diego
+0.347
+-------------486-------------
+training city:  Munich
+testing city: Dallas
+0.318
+-------------487-------------
+training city:  Munich
+testing city: Munich
+0.334
+-------------488-------------
+training city:  Munich
+testing city: New York
+0.37
+-------------489-------------
+training city:  Munich
+testing city: San Antonio
+0.387
+-------------490-------------
+training city:  Munich
+testing city: Houston
+0.355
+-------------491-------------
+training city:  Munich
+testing city: Phoenix
+0.374
+-------------492-------------
+training city:  Munich
+testing city: Detroit
+0.386
+-------------493-------------
+training city:  Munich
+testing city: Los Angeles
+0.386
+-------------494-------------
+training city:  Munich
+testing city: Guangzhou
+0.274
+-------------495-------------
+training city:  Munich
+testing city: Beijing
+0.336
+-------------496-------------
+training city:  Munich
+testing city: Shenzhen
+0.327
+-------------497-------------
+training city:  Munich
+testing city: Hong Kong
+0.322
+-------------498-------------
+training city:  Munich
+testing city: Singapore
+0.327
+-------------499-------------
+training city:  Munich
+testing city: Delhi
+0.212
+-------------500-------------
+training city:  Munich
+testing city: Seoul
+0.237
+-------------501-------------
+training city:  Munich
+testing city: Osaka
+0.237
+-------------502-------------
+training city:  Munich
+testing city: Tokyo
+0.228
+-------------503-------------
+training city:  Munich
+testing city: Moscow
+0.272
+-------------504-------------
+training city:  Munich
+testing city: London
+0.273
+-------------505-------------
+training city:  Munich
+testing city: Stockholm
+0.301
+-------------506-------------
+training city:  Munich
+testing city: Madrid
+0.28
+-------------507-------------
+training city:  Munich
+testing city: Brussels
+0.292
+-------------508-------------
+training city:  Munich
+testing city: Milan
+0.308
+-------------509-------------
+training city:  Munich
+testing city: Amsterdam
+0.272
+-------------510-------------
+training city:  Munich
+testing city: Paris
+0.271
+-------------511-------------
+training city:  Amsterdam
+testing city: Chicago
+0.425
+-------------512-------------
+training city:  Amsterdam
+testing city: Philadelphia
+0.343
+-------------513-------------
+training city:  Amsterdam
+testing city: Shanghai
+0.369
+-------------514-------------
+training city:  Amsterdam
+testing city: Berlin
+0.361
+-------------515-------------
+training city:  Amsterdam
+testing city: San Diego
+0.334
+-------------516-------------
+training city:  Amsterdam
+testing city: Dallas
+0.341
+-------------517-------------
+training city:  Amsterdam
+testing city: Munich
+0.349
+-------------518-------------
+training city:  Amsterdam
+testing city: New York
+0.382
+-------------519-------------
+training city:  Amsterdam
+testing city: San Antonio
+0.419
+-------------520-------------
+training city:  Amsterdam
+testing city: Houston
+0.387
+-------------521-------------
+training city:  Amsterdam
+testing city: Phoenix
+0.382
+-------------522-------------
+training city:  Amsterdam
+testing city: Detroit
+0.377
+-------------523-------------
+training city:  Amsterdam
+testing city: Los Angeles
+0.392
+-------------524-------------
+training city:  Amsterdam
+testing city: Guangzhou
+0.284
+-------------525-------------
+training city:  Amsterdam
+testing city: Beijing
+0.318
+-------------526-------------
+training city:  Amsterdam
+testing city: Shenzhen
+0.332
+-------------527-------------
+training city:  Amsterdam
+testing city: Hong Kong
+0.333
+-------------528-------------
+training city:  Amsterdam
+testing city: Singapore
+0.318
+-------------529-------------
+training city:  Amsterdam
+testing city: Delhi
+0.225
+-------------530-------------
+training city:  Amsterdam
+testing city: Seoul
+0.247
+-------------531-------------
+training city:  Amsterdam
+testing city: Osaka
+0.216
+-------------532-------------
+training city:  Amsterdam
+testing city: Tokyo
+0.216
+-------------533-------------
+training city:  Amsterdam
+testing city: Moscow
+0.274
+-------------534-------------
+training city:  Amsterdam
+testing city: London
+0.3
+-------------535-------------
+training city:  Amsterdam
+testing city: Stockholm
+0.26
+-------------536-------------
+training city:  Amsterdam
+testing city: Madrid
+0.289
+-------------537-------------
+training city:  Amsterdam
+testing city: Brussels
+0.32
+-------------538-------------
+training city:  Amsterdam
+testing city: Milan
+0.322
+-------------539-------------
+training city:  Amsterdam
+testing city: Amsterdam
+0.306
+-------------540-------------
+training city:  Amsterdam
+testing city: Paris
+0.292
+-------------541-------------
+training city:  Brussels
+testing city: Chicago
+0.466
+-------------542-------------
+training city:  Brussels
+testing city: Philadelphia
+0.35
+-------------543-------------
+training city:  Brussels
+testing city: Shanghai
+0.423
+-------------544-------------
+training city:  Brussels
+testing city: Berlin
+0.389
+-------------545-------------
+training city:  Brussels
+testing city: San Diego
+0.366
+-------------546-------------
+training city:  Brussels
+testing city: Dallas
+0.365
+-------------547-------------
+training city:  Brussels
+testing city: Munich
+0.4
+-------------548-------------
+training city:  Brussels
+testing city: New York
+0.422
+-------------549-------------
+training city:  Brussels
+testing city: San Antonio
+0.418
+-------------550-------------
+training city:  Brussels
+testing city: Houston
+0.388
+-------------551-------------
+training city:  Brussels
+testing city: Phoenix
+0.392
+-------------552-------------
+training city:  Brussels
+testing city: Detroit
+0.411
+-------------553-------------
+training city:  Brussels
+testing city: Los Angeles
+0.438
+-------------554-------------
+training city:  Brussels
+testing city: Guangzhou
+0.273
+-------------555-------------
+training city:  Brussels
+testing city: Beijing
+0.325
+-------------556-------------
+training city:  Brussels
+testing city: Shenzhen
+0.334
+-------------557-------------
+training city:  Brussels
+testing city: Hong Kong
+0.348
+-------------558-------------
+training city:  Brussels
+testing city: Singapore
+0.321
+-------------559-------------
+training city:  Brussels
+testing city: Delhi
+0.223
+-------------560-------------
+training city:  Brussels
+testing city: Seoul
+0.244
+-------------561-------------
+training city:  Brussels
+testing city: Osaka
+0.229
+-------------562-------------
+training city:  Brussels
+testing city: Tokyo
+0.222
+-------------563-------------
+training city:  Brussels
+testing city: Moscow
+0.297
+-------------564-------------
+training city:  Brussels
+testing city: London
+0.303
+-------------565-------------
+training city:  Brussels
+testing city: Stockholm
+0.268
+-------------566-------------
+training city:  Brussels
+testing city: Madrid
+0.294
+-------------567-------------
+training city:  Brussels
+testing city: Brussels
+0.321
+-------------568-------------
+training city:  Brussels
+testing city: Milan
+0.329
+-------------569-------------
+training city:  Brussels
+testing city: Amsterdam
+0.305
+-------------570-------------
+training city:  Brussels
+testing city: Paris
+0.318
+-------------571-------------
+training city:  San Diego
+testing city: Chicago
+0.506
+-------------572-------------
+training city:  San Diego
+testing city: Philadelphia
+0.308
+-------------573-------------
+training city:  San Diego
+testing city: Shanghai
+0.344
+-------------574-------------
+training city:  San Diego
+testing city: Berlin
+0.375
+-------------575-------------
+training city:  San Diego
+testing city: San Diego
+0.381
+-------------576-------------
+training city:  San Diego
+testing city: Dallas
+0.347
+-------------577-------------
+training city:  San Diego
+testing city: Munich
+0.359
+-------------578-------------
+training city:  San Diego
+testing city: New York
+0.366
+-------------579-------------
+training city:  San Diego
+testing city: San Antonio
+0.44
+-------------580-------------
+training city:  San Diego
+testing city: Houston
+0.389
+-------------581-------------
+training city:  San Diego
+testing city: Phoenix
+0.423
+-------------582-------------
+training city:  San Diego
+testing city: Detroit
+0.406
+-------------583-------------
+training city:  San Diego
+testing city: Los Angeles
+0.404
+-------------584-------------
+training city:  San Diego
+testing city: Guangzhou
+0.274
+-------------585-------------
+training city:  San Diego
+testing city: Beijing
+0.321
+-------------586-------------
+training city:  San Diego
+testing city: Shenzhen
+0.348
+-------------587-------------
+training city:  San Diego
+testing city: Hong Kong
+0.324
+-------------588-------------
+training city:  San Diego
+testing city: Singapore
+0.297
+-------------589-------------
+training city:  San Diego
+testing city: Delhi
+0.181
+-------------590-------------
+training city:  San Diego
+testing city: Seoul
+0.221
+-------------591-------------
+training city:  San Diego
+testing city: Osaka
+0.219
+-------------592-------------
+training city:  San Diego
+testing city: Tokyo
+0.214
+-------------593-------------
+training city:  San Diego
+testing city: Moscow
+0.304
+-------------594-------------
+training city:  San Diego
+testing city: London
+0.217
+-------------595-------------
+training city:  San Diego
+testing city: Stockholm
+0.269
+-------------596-------------
+training city:  San Diego
+testing city: Madrid
+0.242
+-------------597-------------
+training city:  San Diego
+testing city: Brussels
+0.268
+-------------598-------------
+training city:  San Diego
+testing city: Milan
+0.279
+-------------599-------------
+training city:  San Diego
+testing city: Amsterdam
+0.275
+-------------600-------------
+training city:  San Diego
+testing city: Paris
+0.25
+-------------601-------------
+training city:  Phoenix
+testing city: Chicago
+0.487
+-------------602-------------
+training city:  Phoenix
+testing city: Philadelphia
+0.305
+-------------603-------------
+training city:  Phoenix
+testing city: Shanghai
+0.376
+-------------604-------------
+training city:  Phoenix
+testing city: Berlin
+0.389
+-------------605-------------
+training city:  Phoenix
+testing city: San Diego
+0.341
+-------------606-------------
+training city:  Phoenix
+testing city: Dallas
+0.369
+-------------607-------------
+training city:  Phoenix
+testing city: Munich
+0.354
+-------------608-------------
+training city:  Phoenix
+testing city: New York
+0.374
+-------------609-------------
+training city:  Phoenix
+testing city: San Antonio
+0.42
+-------------610-------------
+training city:  Phoenix
+testing city: Houston
+0.384
+-------------611-------------
+training city:  Phoenix
+testing city: Phoenix
+0.4
+-------------612-------------
+training city:  Phoenix
+testing city: Detroit
+0.396
+-------------613-------------
+training city:  Phoenix
+testing city: Los Angeles
+0.438
+-------------614-------------
+training city:  Phoenix
+testing city: Guangzhou
+0.262
+-------------615-------------
+training city:  Phoenix
+testing city: Beijing
+0.321
+-------------616-------------
+training city:  Phoenix
+testing city: Shenzhen
+0.333
+-------------617-------------
+training city:  Phoenix
+testing city: Hong Kong
+0.317
+-------------618-------------
+training city:  Phoenix
+testing city: Singapore
+0.326
+-------------619-------------
+training city:  Phoenix
+testing city: Delhi
+0.219
+-------------620-------------
+training city:  Phoenix
+testing city: Seoul
+0.237
+-------------621-------------
+training city:  Phoenix
+testing city: Osaka
+0.221
+-------------622-------------
+training city:  Phoenix
+testing city: Tokyo
+0.218
+-------------623-------------
+training city:  Phoenix
+testing city: Moscow
+0.316
+-------------624-------------
+training city:  Phoenix
+testing city: London
+0.259
+-------------625-------------
+training city:  Phoenix
+testing city: Stockholm
+0.263
+-------------626-------------
+training city:  Phoenix
+testing city: Madrid
+0.278
+-------------627-------------
+training city:  Phoenix
+testing city: Brussels
+0.279
+-------------628-------------
+training city:  Phoenix
+testing city: Milan
+0.278
+-------------629-------------
+training city:  Phoenix
+testing city: Amsterdam
+0.259
+-------------630-------------
+training city:  Phoenix
+testing city: Paris
+0.276
+-------------631-------------
+training city:  Berlin
+testing city: Chicago
+0.491
+-------------632-------------
+training city:  Berlin
+testing city: Philadelphia
+0.291
+-------------633-------------
+training city:  Berlin
+testing city: Shanghai
+0.424
+-------------634-------------
+training city:  Berlin
+testing city: Berlin
+0.414
+-------------635-------------
+training city:  Berlin
+testing city: San Diego
+0.35
+-------------636-------------
+training city:  Berlin
+testing city: Dallas
+0.352
+-------------637-------------
+training city:  Berlin
+testing city: Munich
+0.365
+-------------638-------------
+training city:  Berlin
+testing city: New York
+0.391
+-------------639-------------
+training city:  Berlin
+testing city: San Antonio
+0.441
+-------------640-------------
+training city:  Berlin
+testing city: Houston
+0.361
+-------------641-------------
+training city:  Berlin
+testing city: Phoenix
+0.389
+-------------642-------------
+training city:  Berlin
+testing city: Detroit
+0.405
+-------------643-------------
+training city:  Berlin
+testing city: Los Angeles
+0.442
+-------------644-------------
+training city:  Berlin
+testing city: Guangzhou
+0.296
+-------------645-------------
+training city:  Berlin
+testing city: Beijing
+0.33
+-------------646-------------
+training city:  Berlin
+testing city: Shenzhen
+0.357
+-------------647-------------
+training city:  Berlin
+testing city: Hong Kong
+0.324
+-------------648-------------
+training city:  Berlin
+testing city: Singapore
+0.321
+-------------649-------------
+training city:  Berlin
+testing city: Delhi
+0.203
+-------------650-------------
+training city:  Berlin
+testing city: Seoul
+0.216
+-------------651-------------
+training city:  Berlin
+testing city: Osaka
+0.184
+-------------652-------------
+training city:  Berlin
+testing city: Tokyo
+0.181
+-------------653-------------
+training city:  Berlin
+testing city: Moscow
+0.37
+-------------654-------------
+training city:  Berlin
+testing city: London
+0.235
+-------------655-------------
+training city:  Berlin
+testing city: Stockholm
+0.261
+-------------656-------------
+training city:  Berlin
+testing city: Madrid
+0.243
+-------------657-------------
+training city:  Berlin
+testing city: Brussels
+0.277
+-------------658-------------
+training city:  Berlin
+testing city: Milan
+0.297
+-------------659-------------
+training city:  Berlin
+testing city: Amsterdam
+0.243
+-------------660-------------
+training city:  Berlin
+testing city: Paris
+0.257
+-------------661-------------
+training city:  Stockholm
+testing city: Chicago
+0.334
+-------------662-------------
+training city:  Stockholm
+testing city: Philadelphia
+0.255
+-------------663-------------
+training city:  Stockholm
+testing city: Shanghai
+0.32
+-------------664-------------
+training city:  Stockholm
+testing city: Berlin
+0.289
+-------------665-------------
+training city:  Stockholm
+testing city: San Diego
+0.258
+-------------666-------------
+training city:  Stockholm
+testing city: Dallas
+0.274
+-------------667-------------
+training city:  Stockholm
+testing city: Munich
+0.286
+-------------668-------------
+training city:  Stockholm
+testing city: New York
+0.314
+-------------669-------------
+training city:  Stockholm
+testing city: San Antonio
+0.333
+-------------670-------------
+training city:  Stockholm
+testing city: Houston
+0.294
+-------------671-------------
+training city:  Stockholm
+testing city: Phoenix
+0.314
+-------------672-------------
+training city:  Stockholm
+testing city: Detroit
+0.297
+-------------673-------------
+training city:  Stockholm
+testing city: Los Angeles
+0.329
+-------------674-------------
+training city:  Stockholm
+testing city: Guangzhou
+0.262
+-------------675-------------
+training city:  Stockholm
+testing city: Beijing
+0.273
+-------------676-------------
+training city:  Stockholm
+testing city: Shenzhen
+0.293
+-------------677-------------
+training city:  Stockholm
+testing city: Hong Kong
+0.322
+-------------678-------------
+training city:  Stockholm
+testing city: Singapore
+0.286
+-------------679-------------
+training city:  Stockholm
+testing city: Delhi
+0.163
+-------------680-------------
+training city:  Stockholm
+testing city: Seoul
+0.182
+-------------681-------------
+training city:  Stockholm
+testing city: Osaka
+0.167
+-------------682-------------
+training city:  Stockholm
+testing city: Tokyo
+0.166
+-------------683-------------
+training city:  Stockholm
+testing city: Moscow
+0.199
+-------------684-------------
+training city:  Stockholm
+testing city: London
+0.2
+-------------685-------------
+training city:  Stockholm
+testing city: Stockholm
+0.225
+-------------686-------------
+training city:  Stockholm
+testing city: Madrid
+0.204
+-------------687-------------
+training city:  Stockholm
+testing city: Brussels
+0.236
+-------------688-------------
+training city:  Stockholm
+testing city: Milan
+0.24
+-------------689-------------
+training city:  Stockholm
+testing city: Amsterdam
+0.195
+-------------690-------------
+training city:  Stockholm
+testing city: Paris
+0.223
+-------------691-------------
+training city:  Shenzhen
+testing city: Chicago
+0.375
+-------------692-------------
+training city:  Shenzhen
+testing city: Philadelphia
+0.234
+-------------693-------------
+training city:  Shenzhen
+testing city: Shanghai
+0.333
+-------------694-------------
+training city:  Shenzhen
+testing city: Berlin
+0.305
+-------------695-------------
+training city:  Shenzhen
+testing city: San Diego
+0.314
+-------------696-------------
+training city:  Shenzhen
+testing city: Dallas
+0.298
+-------------697-------------
+training city:  Shenzhen
+testing city: Munich
+0.308
+-------------698-------------
+training city:  Shenzhen
+testing city: New York
+0.274
+-------------699-------------
+training city:  Shenzhen
+testing city: San Antonio
+0.319
+-------------700-------------
+training city:  Shenzhen
+testing city: Houston
+0.256
+-------------701-------------
+training city:  Shenzhen
+testing city: Phoenix
+0.34
+-------------702-------------
+training city:  Shenzhen
+testing city: Detroit
+0.309
+-------------703-------------
+training city:  Shenzhen
+testing city: Los Angeles
+0.334
+-------------704-------------
+training city:  Shenzhen
+testing city: Guangzhou
+0.25
+-------------705-------------
+training city:  Shenzhen
+testing city: Beijing
+0.271
+-------------706-------------
+training city:  Shenzhen
+testing city: Shenzhen
+0.31
+-------------707-------------
+training city:  Shenzhen
+testing city: Hong Kong
+0.296
+-------------708-------------
+training city:  Shenzhen
+testing city: Singapore
+0.317
+-------------709-------------
+training city:  Shenzhen
+testing city: Delhi
+0.149
+-------------710-------------
+training city:  Shenzhen
+testing city: Seoul
+0.188
+-------------711-------------
+training city:  Shenzhen
+testing city: Osaka
+0.194
+-------------712-------------
+training city:  Shenzhen
+testing city: Tokyo
+0.185
+-------------713-------------
+training city:  Shenzhen
+testing city: Moscow
+0.307
+-------------714-------------
+training city:  Shenzhen
+testing city: London
+0.206
+-------------715-------------
+training city:  Shenzhen
+testing city: Stockholm
+0.234
+-------------716-------------
+training city:  Shenzhen
+testing city: Madrid
+0.216
+-------------717-------------
+training city:  Shenzhen
+testing city: Brussels
+0.225
+-------------718-------------
+training city:  Shenzhen
+testing city: Milan
+0.229
+-------------719-------------
+training city:  Shenzhen
+testing city: Amsterdam
+0.205
+-------------720-------------
+training city:  Shenzhen
+testing city: Paris
+0.204
+-------------721-------------
+training city:  Beijing
+testing city: Chicago
+0.407
+-------------722-------------
+training city:  Beijing
+testing city: Philadelphia
+0.207
+-------------723-------------
+training city:  Beijing
+testing city: Shanghai
+0.344
+-------------724-------------
+training city:  Beijing
+testing city: Berlin
+0.299
+-------------725-------------
+training city:  Beijing
+testing city: San Diego
+0.287
+-------------726-------------
+training city:  Beijing
+testing city: Dallas
+0.283
+-------------727-------------
+training city:  Beijing
+testing city: Munich
+0.274
+-------------728-------------
+training city:  Beijing
+testing city: New York
+0.285
+-------------729-------------
+training city:  Beijing
+testing city: San Antonio
+0.31
+-------------730-------------
+training city:  Beijing
+testing city: Houston
+0.287
+-------------731-------------
+training city:  Beijing
+testing city: Phoenix
+0.327
+-------------732-------------
+training city:  Beijing
+testing city: Detroit
+0.317
+-------------733-------------
+training city:  Beijing
+testing city: Los Angeles
+0.335
+-------------734-------------
+training city:  Beijing
+testing city: Guangzhou
+0.295
+-------------735-------------
+training city:  Beijing
+testing city: Beijing
+0.33
+-------------736-------------
+training city:  Beijing
+testing city: Shenzhen
+0.304
+-------------737-------------
+training city:  Beijing
+testing city: Hong Kong
+0.308
+-------------738-------------
+training city:  Beijing
+testing city: Singapore
+0.325
+-------------739-------------
+training city:  Beijing
+testing city: Delhi
+0.149
+-------------740-------------
+training city:  Beijing
+testing city: Seoul
+0.146
+-------------741-------------
+training city:  Beijing
+testing city: Osaka
+0.116
+-------------742-------------
+training city:  Beijing
+testing city: Tokyo
+0.111
+-------------743-------------
+training city:  Beijing
+testing city: Moscow
+0.281
+-------------744-------------
+training city:  Beijing
+testing city: London
+0.155
+-------------745-------------
+training city:  Beijing
+testing city: Stockholm
+0.208
+-------------746-------------
+training city:  Beijing
+testing city: Madrid
+0.178
+-------------747-------------
+training city:  Beijing
+testing city: Brussels
+0.204
+-------------748-------------
+training city:  Beijing
+testing city: Milan
+0.185
+-------------749-------------
+training city:  Beijing
+testing city: Amsterdam
+0.211
+-------------750-------------
+training city:  Beijing
+testing city: Paris
+0.184
+-------------751-------------
+training city:  Shanghai
+testing city: Chicago
+0.253
+-------------752-------------
+training city:  Shanghai
+testing city: Philadelphia
+0.178
+-------------753-------------
+training city:  Shanghai
+testing city: Shanghai
+0.288
+-------------754-------------
+training city:  Shanghai
+testing city: Berlin
+0.214
+-------------755-------------
+training city:  Shanghai
+testing city: San Diego
+0.2
+-------------756-------------
+training city:  Shanghai
+testing city: Dallas
+0.232
+-------------757-------------
+training city:  Shanghai
+testing city: Munich
+0.199
+-------------758-------------
+training city:  Shanghai
+testing city: New York
+0.198
+-------------759-------------
+training city:  Shanghai
+testing city: San Antonio
+0.225
+-------------760-------------
+training city:  Shanghai
+testing city: Houston
+0.226
+-------------761-------------
+training city:  Shanghai
+testing city: Phoenix
+0.25
+-------------762-------------
+training city:  Shanghai
+testing city: Detroit
+0.233
+-------------763-------------
+training city:  Shanghai
+testing city: Los Angeles
+0.229
+-------------764-------------
+training city:  Shanghai
+testing city: Guangzhou
+0.272
+-------------765-------------
+training city:  Shanghai
+testing city: Beijing
+0.245
+-------------766-------------
+training city:  Shanghai
+testing city: Shenzhen
+0.254
+-------------767-------------
+training city:  Shanghai
+testing city: Hong Kong
+0.295
+-------------768-------------
+training city:  Shanghai
+testing city: Singapore
+0.267
+-------------769-------------
+training city:  Shanghai
+testing city: Delhi
+0.122
+-------------770-------------
+training city:  Shanghai
+testing city: Seoul
+0.155
+-------------771-------------
+training city:  Shanghai
+testing city: Osaka
+0.154
+-------------772-------------
+training city:  Shanghai
+testing city: Tokyo
+0.149
+-------------773-------------
+training city:  Shanghai
+testing city: Moscow
+0.149
+-------------774-------------
+training city:  Shanghai
+testing city: London
+0.145
+-------------775-------------
+training city:  Shanghai
+testing city: Stockholm
+0.141
+-------------776-------------
+training city:  Shanghai
+testing city: Madrid
+0.147
+-------------777-------------
+training city:  Shanghai
+testing city: Brussels
+0.142
+-------------778-------------
+training city:  Shanghai
+testing city: Milan
+0.139
+-------------779-------------
+training city:  Shanghai
+testing city: Amsterdam
+0.16
+-------------780-------------
+training city:  Shanghai
+testing city: Paris
+0.158
+-------------781-------------
+training city:  Moscow
+testing city: Chicago
+0.283
+-------------782-------------
+training city:  Moscow
+testing city: Philadelphia
+0.196
+-------------783-------------
+training city:  Moscow
+testing city: Shanghai
+0.281
+-------------784-------------
+training city:  Moscow
+testing city: Berlin
+0.205
+-------------785-------------
+training city:  Moscow
+testing city: San Diego
+0.201
+-------------786-------------
+training city:  Moscow
+testing city: Dallas
+0.227
+-------------787-------------
+training city:  Moscow
+testing city: Munich
+0.228
+-------------788-------------
+training city:  Moscow
+testing city: New York
+0.214
+-------------789-------------
+training city:  Moscow
+testing city: San Antonio
+0.231
+-------------790-------------
+training city:  Moscow
+testing city: Houston
+0.202
+-------------791-------------
+training city:  Moscow
+testing city: Phoenix
+0.233
+-------------792-------------
+training city:  Moscow
+testing city: Detroit
+0.22
+-------------793-------------
+training city:  Moscow
+testing city: Los Angeles
+0.236
+-------------794-------------
+training city:  Moscow
+testing city: Guangzhou
+0.272
+-------------795-------------
+training city:  Moscow
+testing city: Beijing
+0.279
+-------------796-------------
+training city:  Moscow
+testing city: Shenzhen
+0.249
+-------------797-------------
+training city:  Moscow
+testing city: Hong Kong
+0.295
+-------------798-------------
+training city:  Moscow
+testing city: Singapore
+0.277
+-------------799-------------
+training city:  Moscow
+testing city: Delhi
+0.145
+-------------800-------------
+training city:  Moscow
+testing city: Seoul
+0.156
+-------------801-------------
+training city:  Moscow
+testing city: Osaka
+0.159
+-------------802-------------
+training city:  Moscow
+testing city: Tokyo
+0.153
+-------------803-------------
+training city:  Moscow
+testing city: Moscow
+0.235
+-------------804-------------
+training city:  Moscow
+testing city: London
+0.182
+-------------805-------------
+training city:  Moscow
+testing city: Stockholm
+0.155
+-------------806-------------
+training city:  Moscow
+testing city: Madrid
+0.175
+-------------807-------------
+training city:  Moscow
+testing city: Brussels
+0.151
+-------------808-------------
+training city:  Moscow
+testing city: Milan
+0.155
+-------------809-------------
+training city:  Moscow
+testing city: Amsterdam
+0.176
+-------------810-------------
+training city:  Moscow
+testing city: Paris
+0.17
+-------------811-------------
+training city:  Guangzhou
+testing city: Chicago
+0.265
+-------------812-------------
+training city:  Guangzhou
+testing city: Philadelphia
+0.182
+-------------813-------------
+training city:  Guangzhou
+testing city: Shanghai
+0.263
+-------------814-------------
+training city:  Guangzhou
+testing city: Berlin
+0.199
+-------------815-------------
+training city:  Guangzhou
+testing city: San Diego
+0.189
+-------------816-------------
+training city:  Guangzhou
+testing city: Dallas
+0.199
+-------------817-------------
+training city:  Guangzhou
+testing city: Munich
+0.193
+-------------818-------------
+training city:  Guangzhou
+testing city: New York
+0.197
+-------------819-------------
+training city:  Guangzhou
+testing city: San Antonio
+0.227
+-------------820-------------
+training city:  Guangzhou
+testing city: Houston
+0.185
+-------------821-------------
+training city:  Guangzhou
+testing city: Phoenix
+0.208
+-------------822-------------
+training city:  Guangzhou
+testing city: Detroit
+0.214
+-------------823-------------
+training city:  Guangzhou
+testing city: Los Angeles
+0.213
+-------------824-------------
+training city:  Guangzhou
+testing city: Guangzhou
+0.225
+-------------825-------------
+training city:  Guangzhou
+testing city: Beijing
+0.209
+-------------826-------------
+training city:  Guangzhou
+testing city: Shenzhen
+0.202
+-------------827-------------
+training city:  Guangzhou
+testing city: Hong Kong
+0.279
+-------------828-------------
+training city:  Guangzhou
+testing city: Singapore
+0.296
+-------------829-------------
+training city:  Guangzhou
+testing city: Delhi
+0.126
+-------------830-------------
+training city:  Guangzhou
+testing city: Seoul
+0.171
+-------------831-------------
+training city:  Guangzhou
+testing city: Osaka
+0.202
+-------------832-------------
+training city:  Guangzhou
+testing city: Tokyo
+0.179
+-------------833-------------
+training city:  Guangzhou
+testing city: Moscow
+0.166
+-------------834-------------
+training city:  Guangzhou
+testing city: London
+0.161
+-------------835-------------
+training city:  Guangzhou
+testing city: Stockholm
+0.133
+-------------836-------------
+training city:  Guangzhou
+testing city: Madrid
+0.165
+-------------837-------------
+training city:  Guangzhou
+testing city: Brussels
+0.167
+-------------838-------------
+training city:  Guangzhou
+testing city: Milan
+0.166
+-------------839-------------
+training city:  Guangzhou
+testing city: Amsterdam
+0.162
+-------------840-------------
+training city:  Guangzhou
+testing city: Paris
+0.145
+-------------841-------------
+training city:  Hong Kong
+testing city: Chicago
+0.179
+-------------842-------------
+training city:  Hong Kong
+testing city: Philadelphia
+0.147
+-------------843-------------
+training city:  Hong Kong
+testing city: Shanghai
+0.218
+-------------844-------------
+training city:  Hong Kong
+testing city: Berlin
+0.16
+-------------845-------------
+training city:  Hong Kong
+testing city: San Diego
+0.13
+-------------846-------------
+training city:  Hong Kong
+testing city: Dallas
+0.145
+-------------847-------------
+training city:  Hong Kong
+testing city: Munich
+0.138
+-------------848-------------
+training city:  Hong Kong
+testing city: New York
+0.142
+-------------849-------------
+training city:  Hong Kong
+testing city: San Antonio
+0.202
+-------------850-------------
+training city:  Hong Kong
+testing city: Houston
+0.15
+-------------851-------------
+training city:  Hong Kong
+testing city: Phoenix
+0.178
+-------------852-------------
+training city:  Hong Kong
+testing city: Detroit
+0.15
+-------------853-------------
+training city:  Hong Kong
+testing city: Los Angeles
+0.175
+-------------854-------------
+training city:  Hong Kong
+testing city: Guangzhou
+0.246
+-------------855-------------
+training city:  Hong Kong
+testing city: Beijing
+0.225
+-------------856-------------
+training city:  Hong Kong
+testing city: Shenzhen
+0.209
+-------------857-------------
+training city:  Hong Kong
+testing city: Hong Kong
+0.268
+-------------858-------------
+training city:  Hong Kong
+testing city: Singapore
+0.293
+-------------859-------------
+training city:  Hong Kong
+testing city: Delhi
+0.111
+-------------860-------------
+training city:  Hong Kong
+testing city: Seoul
+0.13
+-------------861-------------
+training city:  Hong Kong
+testing city: Osaka
+0.189
+-------------862-------------
+training city:  Hong Kong
+testing city: Tokyo
+0.179
+-------------863-------------
+training city:  Hong Kong
+testing city: Moscow
+0.137
+-------------864-------------
+training city:  Hong Kong
+testing city: London
+0.112
+-------------865-------------
+training city:  Hong Kong
+testing city: Stockholm
+0.103
+-------------866-------------
+training city:  Hong Kong
+testing city: Madrid
+0.111
+-------------867-------------
+training city:  Hong Kong
+testing city: Brussels
+0.123
+-------------868-------------
+training city:  Hong Kong
+testing city: Milan
+0.118
+-------------869-------------
+training city:  Hong Kong
+testing city: Amsterdam
+0.11
+-------------870-------------
+training city:  Hong Kong
+testing city: Paris
+0.108
+-------------871-------------
+training city:  Singapore
+testing city: Chicago
+0.069
+-------------872-------------
+training city:  Singapore
+testing city: Philadelphia
+0.102
+-------------873-------------
+training city:  Singapore
+testing city: Shanghai
+0.154
+-------------874-------------
+training city:  Singapore
+testing city: Berlin
+0.03
+-------------875-------------
+training city:  Singapore
+testing city: San Diego
+0.046
+-------------876-------------
+training city:  Singapore
+testing city: Dallas
+0.029
+-------------877-------------
+training city:  Singapore
+testing city: Munich
+0.01
+-------------878-------------
+training city:  Singapore
+testing city: New York
+0.032
+-------------879-------------
+training city:  Singapore
+testing city: San Antonio
+0.065
+-------------880-------------
+training city:  Singapore
+testing city: Houston
+0.065
+-------------881-------------
+training city:  Singapore
+testing city: Phoenix
+0.065
+-------------882-------------
+training city:  Singapore
+testing city: Detroit
+0.03
+-------------883-------------
+training city:  Singapore
+testing city: Los Angeles
+0.053
+-------------884-------------
+training city:  Singapore
+testing city: Guangzhou
+0.242
+-------------885-------------
+training city:  Singapore
+testing city: Beijing
+0.209
+-------------886-------------
+training city:  Singapore
+testing city: Shenzhen
+0.156
+-------------887-------------
+training city:  Singapore
+testing city: Hong Kong
+0.301
+-------------888-------------
+training city:  Singapore
+testing city: Singapore
+0.261
+-------------889-------------
+training city:  Singapore
+testing city: Delhi
+0.076
+-------------890-------------
+training city:  Singapore
+testing city: Seoul
+0.126
+-------------891-------------
+training city:  Singapore
+testing city: Osaka
+0.185
+-------------892-------------
+training city:  Singapore
+testing city: Tokyo
+0.182
+-------------893-------------
+training city:  Singapore
+testing city: Moscow
+0.008
+-------------894-------------
+training city:  Singapore
+testing city: London
+0.087
+-------------895-------------
+training city:  Singapore
+testing city: Stockholm
+0.014
+-------------896-------------
+training city:  Singapore
+testing city: Madrid
+0.099
+-------------897-------------
+training city:  Singapore
+testing city: Brussels
+0.026
+-------------898-------------
+training city:  Singapore
+testing city: Milan
+0.038
+-------------899-------------
+training city:  Singapore
+testing city: Amsterdam
+0.047
+-------------900-------------
+training city:  Singapore
+testing city: Paris
+0.031
