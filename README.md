@@ -69,7 +69,7 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
 Here,
 
 [1]: Wei, Y., Zheng, Y., & Yang, Q. (2016, August). Transfer knowledge between cities. In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 1905-1914).     
-[2] He, T., Bao, J., Li, R., Ruan, S., Li, Y., Song, L., ... & Zheng, Y. (2020, April). What is the human mobility in a new city: Transfer mobility knowledge across cities. In Proceedings of The Web Conference 2020 (pp. 1355-1365).     
+[2]: He, T., Bao, J., Li, R., Ruan, S., Li, Y., Song, L., ... & Zheng, Y. (2020, April). What is the human mobility in a new city: Transfer mobility knowledge across cities. In Proceedings of The Web Conference 2020 (pp. 1355-1365).     
 [3]: Barrington-Leigh, C., & Millard-Ball, A. (2020). Global trends toward urban street-network sprawl. Proceedings of the National Academy of Sciences, 117(4), 1941-1950.     
 [4]: Burghardt, K., Uhl, J. H., Lerman, K., & Leyk, S. (2022). Road network evolution in the urban and rural United States since 1900. Computers, Environment and Urban Systems, 95, 101803.     
 [5]: Çolak, S., Lima, A., & González, M. C. (2016). Understanding congested travel in urban areas. Nature communications, 7(1), 1-8.     
