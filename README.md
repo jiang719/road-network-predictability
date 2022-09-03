@@ -79,7 +79,7 @@ Here,
 
 
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="600">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="666">
 </p>
 
 ## License
