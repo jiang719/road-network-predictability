@@ -41,10 +41,15 @@ Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusu
 * **association-analysis**: Conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
 * **inter-city-network-homogeneity**: Get the inter-city homogeneity by learning URN features on city A and testing on city B.
 
-## Results
+## Methods
 
 <p align="center">
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="666">
+</p>
+
+## Takeaway 1
+<p align="center">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/takeaway-1-similarity-between-two-cities/Figure4.png" width="666">
 </p>
 
 ## License
