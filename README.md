@@ -17,6 +17,9 @@ It captures the multi-hop node neighborhood relationships, and has promising app
 **Quantifying the Spatial Homogeneity of Urban Road Networks via Graph Neural Networks**
 Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusuri\*, Jianzhu Ma\*, March, 2022, Nature Machine Intelligence. 
 
+## Media Coverage
+**Tech Xplore**: https://techxplore.com/news/2022-05-graph-neural-networks-spatial-homogeneity.html
+
 ## Requirements
 * Window System
 * Python 3.6
