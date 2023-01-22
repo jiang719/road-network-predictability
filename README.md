@@ -63,8 +63,7 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
   * **Transfer learning (computer science)**, refs [1],[2],
   * **Global road network analysis (urban science)**, refs [3],[4], 
   * **Global congestion analysis, accident analysis (transportation engineering)**, refs [5],[6],  
-  * **Urban infrastructure evaluation (economics, sociology)**, refs [7],[8],
-* please refer to [**takeaway-1/F1-30-30.txt**](https://github.com/jiang719/road-network-predictability/blob/master/takeaway-1/F1-30-30.txt) under this GitHub page to access these 900 values.  
+  * **Urban infrastructure evaluation (economics, sociology)**, refs [7],[8], please refer to [**takeaway-1/F1-30-30.txt**](https://github.com/jiang719/road-network-predictability/blob/master/takeaway-1/F1-30-30.txt) under this GitHub page to access these 900 values.  
 
 Here,
 
