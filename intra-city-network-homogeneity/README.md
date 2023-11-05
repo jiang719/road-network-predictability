@@ -1,6 +1,6 @@
 # Road network prediction
 
-This setion is the implementation of road network prediction. We try 6 different models to predict the missing roads based on the incomplete road network, including Node2vec, Struc2vec, GraphSage, Sprectral GCN, Relational GCN and Graph Attention Network. 
+This setion is the implementation of road network prediction. We try six distinct models to predict the missing roads based on the incomplete road network, including Node2vec, Struc2vec, GraphSage, Sprectral GCN, Relational GCN and Graph Attention Network. 
 
 ## Directory Structure
 * models: implementation of 6 different road network prediction models
@@ -21,7 +21,7 @@ This setion is the implementation of road network prediction. We try 6 different
 ```
  python struc2vec_trainer.py
 ```
-* To train Spectral gcn + Distmult model
+* To train Spectral GCN + Distmult model
 ```
  python spectral_gcn_trainer.py
 ```
