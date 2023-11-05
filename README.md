@@ -57,7 +57,12 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
 * We compute the spatial homogeneity by training the GNN model on road networks in city A, and testing it on road networks in city B.
 * We ultimately get 30*30=900 F1 scores for the following 30 cities.
 * Each entry in the following 30*30 matrix represents the directional similarity of road networks in two cities.
-* Please refer to the section [**Transfer learning reveals intercity similarity**](https://www.researchgate.net/publication/348169398_Quantifying_the_Spatial_Homogeneity_of_Urban_Road_Networks_via_Graph_Neural_Networks) in our paper. 
+* Please refer to the section [**Transfer learning reveals intercity similarity**](https://www.researchgate.net/publication/348169398_Quantifying_the_Spatial_Homogeneity_of_Urban_Road_Networks_via_Graph_Neural_Networks) in our paper.
+  
+<p align="center">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="666">
+</p>
+
 * For those interested in applying our homogeneity score in their research across various domains, such as, 
   * **Transfer learning (computer science)**, refs [1],[2],
   * **Global road network analysis (urban science)**, refs [3],[4], 
@@ -77,9 +82,6 @@ with
 | 7 | Bettencourt, L. M., Lobo, J., Helbing, D., Kühnert, C., & West, G. B.|Growth, innovation, scaling, and the pace of life in cities.|PNAS, 2007 |
 | 8 | Arcaute, E., Hatna, E., Ferguson, P., Youn, H., Johansson, A., & Batty, M.|Constructing cities, deconstructing scaling laws.|Journal of the Royal Society Interface, 2015 |
     
-<p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="666">
-</p>
 
 ## Reference
 | Model | Authors | Publication | Venue |  
