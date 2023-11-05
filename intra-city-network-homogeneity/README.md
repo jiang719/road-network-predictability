@@ -12,20 +12,20 @@ This section pertains to the execution of road network prediction. We forecast t
 * large_city_network_result: Relational GCN model's result on the six cities with larger road networks (30*30km).
 
 ## Training
-* To train Node2vec + Distmult
+* To train Node2vec + DistMult
 ```
  cd trainer
  python node2vec_trainer.py
 ```
-* To train Struc2vec + Distmult
+* To train Struc2vec + DistMult
 ```
  python struc2vec_trainer.py
 ```
-* To train Spectral GCN + Distmult
+* To train Spectral GCN + DistMult
 ```
  python spectral_gcn_trainer.py
 ```
-* To train GraphSAGE + Distmult
+* To train GraphSAGE + DistMult
 ```
  python graph_sage_trainer.py
 ```
@@ -33,7 +33,7 @@ This section pertains to the execution of road network prediction. We forecast t
 ```
  python gat_trainer.py
 ```
-* To train Relational GCN + Distmult
+* To train Relational GCN + DistMult
 ```
  python relational_gcn_trainer.py
 ```
