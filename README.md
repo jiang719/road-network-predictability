@@ -3,14 +3,14 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5866593.svg)](https://doi.org/10.5281/zenodo.5866593)
 
-A graph neural network computing the intra-city and inter-city spatial homogeneity of urban road networks (URNs) 
+A graph neural network approach that calculates the intra-city and inter-city spatial homogeneity of urban road networks (URNs) 
 
 ## Introduction
 
-* The spatial homogeneity of URNs measures the similarity of intersection connection styles between the subnetwork and the entire network. 
-It captures the multi-hop node neighborhood relationships, and has promising applications in urban science, network science, and urban computing.
-* This GitHub repository discusses a user-friendly approach to compute the network homogeneity of URNs worldwide. 
-* URN classification, URN network irregularity (NI) calculation, socioeconomic factor relation analysis, inter-city homogeneity analysis are also attached.  
+* The spatial homogeneity of URNs measures the similarity of intersection connection patterns between the subnetwork and the entire network. 
+It captures the multi-hop node neighborhood relationships, and holds potential for applications in urban science, network science, and urban computing.
+* This GitHub repository presents a user-friendly method for quantifying the network homogeneity of URNs on a global scale. 
+* Additionally, URN classification, URN network irregularity (NI) computation, analysis of socioeconomic factors, and inter-city homogeneity analysis are also incorporated.  
 
 ## Publication
 
@@ -36,20 +36,18 @@ Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusu
 
 ## Directory Structure
 
-* **data-collection**: Collect and preprocess the road network data for 30 cities in the US, Europe, and Asia. 
-* **intra-city-network-homogeneity**: Perform the link prediction on URNs using 6 different encoders (such as relational GCN) and 1 decoder (DistMult) and compute F1 scores.
-* **road-classification**: Implement the URN classification and discover its connections with F1 scores.
-* **association-analysis**: Conduct the correlation analysis between F1 scores and social-economic factors, network topology metrics.
-* **inter-city-network-homogeneity**: Get the inter-city homogeneity by learning URN features on city A and testing on city B.
+* **data-collection**: Collect and preprocess road network data for 30 cities across the United States, Europe, and Asia. 
+* **intra-city-network-homogeneity**: Conduct link prediction on URNs by utilizing six distinct encoders, including relational GCN, and a decoder known as DistMult, followed by the computation of F1 scores.
+* **road-classification**: Execute URN classification and discover its correlations with F1 scores.
+* **association-analysis**: Perform a correlation analysis between F1 scores and socioeconomic factors as well as network topology metrics.
+* **inter-city-network-homogeneity**: Obtain inter-city homogeneity by training GNN models on city A and subsequently testing them on city B.
 
 ## Methods
 a. Description of spatial homogeneity.   
-b. A road network.   © OpenStreetMap contributors.    
-c. Message-passing between two layers in the graph neural network (GNN).   
+b. A road network near 40.71798°N, 74.00053°W in New York City. © OpenStreetMap contributors.    
+c. Message-passing mechanism between adjacent layers in the graph neural network (GNN).   
 d. Connecting strength S of a pair of nodes.   
-e. We define the road network spatial homogeneity as the F1 score of the best GNN model with a well-tuned strength threshold δ.    
-
-
+e. We define the road network spatial homogeneity as the F1 score of the best GNN model with a well-tuned connecting strength threshold δ.    
 
 <p align="center">
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="666">
@@ -57,14 +55,14 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
 
 ## Takeaway 1: the similarity between road networks in two cities
 * We compute the spatial homogeneity by training the GNN model on road networks in city A, and testing it on road networks in city B.
-* We finally get 30*30=900 F1 scores for the following 30 cities.
-* Each entry in the following matrix represents the directional similarity of road networks in two cities.
-* Please go to the section [**Transfer learning reveals intercity similarity**](https://www.researchgate.net/publication/348169398_Quantifying_the_Spatial_Homogeneity_of_Urban_Road_Networks_via_Graph_Neural_Networks) in our paper for deep interpretation. 
-* For those who want to use our similarity score in their studies in different fields, for example, 
+* We ultimately get 30*30=900 F1 scores for the following 30 cities.
+* Each entry in the following 30*30 matrix represents the directional similarity of road networks in two cities.
+* Please refer to the section [**Transfer learning reveals intercity similarity**](https://www.researchgate.net/publication/348169398_Quantifying_the_Spatial_Homogeneity_of_Urban_Road_Networks_via_Graph_Neural_Networks) in our paper. 
+* For those interested in applying our homogeneity score in their research across various domains, such as, 
   * **Transfer learning (computer science)**, refs [1],[2],
   * **Global road network analysis (urban science)**, refs [3],[4], 
   * **Global congestion analysis, accident analysis (transportation engineering)**, refs [5],[6],  
-  * **Urban infrastructure evaluation (economics, sociology)**, refs [7],[8], please refer to [**takeaway-1/F1-30-30.txt**](https://github.com/jiang719/road-network-predictability/blob/master/takeaway-1/F1-30-30.txt) under this GitHub page to access these 900 values.  
+  * **Urban infrastructure evaluation (economics, sociology)**, refs [7],[8], please refer to [**takeaway-1/F1-30-30.txt**](https://github.com/jiang719/road-network-predictability/blob/master/takeaway-1/F1-30-30.txt) under this GitHub page to access these 30*30=900 values.  
 
 with
 
