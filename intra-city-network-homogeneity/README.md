@@ -29,7 +29,7 @@ This section pertains to the execution of road network prediction. We forecast t
 ```
  python graph_sage_trainer.py
 ```
-* To train Graph Attention Network + Distmult model
+* To train Graph Attention Network + DistMult
 ```
  python gat_trainer.py
 ```
