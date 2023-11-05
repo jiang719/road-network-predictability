@@ -10,7 +10,7 @@ A graph neural network computing the intra-city and inter-city spatial homogenei
 * The spatial homogeneity of URNs measures the similarity of intersection connection styles between the subnetwork and the entire network. 
 It captures the multi-hop node neighborhood relationships, and has promising applications in urban science, network science, and urban computing.
 * This GitHub repository discusses a user-friendly approach to compute the network homogeneity of URNs worldwide. 
-* URN classification, URN NI calculation, socioeconomic factor relation analysis, inter-city homogeneity analysis are also attached.  
+* URN classification, URN network irregularity (NI) calculation, socioeconomic factor relation analysis, inter-city homogeneity analysis are also attached.  
 
 ## Publication
 
@@ -55,7 +55,7 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="666">
 </p>
 
-## Takeaway 1: the similarity between road networks in two cities.
+## Takeaway 1: the similarity between road networks in two cities
 * We compute the spatial homogeneity by training the GNN model on road networks in city A, and testing it on road networks in city B.
 * We finally get 30*30=900 F1 scores for the following 30 cities.
 * Each entry in the following matrix represents the directional similarity of road networks in two cities.
@@ -66,7 +66,7 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
   * **Global congestion analysis, accident analysis (transportation engineering)**, refs [5],[6],  
   * **Urban infrastructure evaluation (economics, sociology)**, refs [7],[8], please refer to [**takeaway-1/F1-30-30.txt**](https://github.com/jiang719/road-network-predictability/blob/master/takeaway-1/F1-30-30.txt) under this GitHub page to access these 900 values.  
 
-Here,
+with
 
 | Index | Authors | Title | Publication |  
 | :-----| :-----| :-----| :-----|
