@@ -1,4 +1,4 @@
-## Quantifying the Spatial Homogeneity of Urban Road Networks via Graph Neural Networks.
+## Quantifying the Spatial Homogeneity of Urban Road Networks via Graph Neural Networks
 (Publication DOI: 10.1038/s42256-022-00462-y)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5866593.svg)](https://doi.org/10.5281/zenodo.5866593)
@@ -26,8 +26,9 @@ Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusu
 
 **Peking University News**: https://news.pku.edu.cn/jxky/b7c965cbb640434ca109da42c94d7e39.htm
 
+**Beijing University of Posts and Telecommunications**: https://lib.bupt.edu.cn/a/zuixingonggao/2022/0905/4240.html
+
 ## Requirements
-* Window System
 * Python 3.6
 * NetworkX 2.1 
 * OSMnx 0.11.4
