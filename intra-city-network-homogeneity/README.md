@@ -1,6 +1,6 @@
 # Road network prediction
 
-This section pertains to the execution of road network prediction. We forecase the missing road segments within an incomplete road network by employing six distinct models, which include Node2vec, Struc2vec, GraphSage, Sprectral GCN, Relational GCN, and Graph Attention Network. 
+This section pertains to the execution of road network prediction. We forecast the missing road segments within an incomplete road network by employing six distinct models, which include Node2vec, Struc2vec, GraphSage, Sprectral GCN, Relational GCN, and Graph Attention Network. 
 
 ## Directory Structure
 * models: implementation of 6 different road network prediction models
