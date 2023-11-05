@@ -81,6 +81,19 @@ with
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="666">
 </p>
 
+## Reference
+| Model | Authors | Publication | Venue |  
+| :-----| :-----| :-----| :-----|
+| Node2vec | Grover, A. and Leskovec, J. | node2vec: Scalable feature learning for networks. | SIGKDD, 2016 |
+| Struc2vec | Ribeiro, L.F., Saverese, P.H. and Figueiredo, D.R. | struc2vec: Learning node representations from structural identity. | SIGKDD, 2017 |
+| Spectral GCN | Kipf, T. N. and Welling, M. | Semi-supervised classifcation with graph convolutional networks. | ICLR, 2017 |
+| GraphSAGE | Hamilton, W. L., Ying, R. and Leskovec, J. |  Inductive representation learning on large graphs. | NIPS, 2017 |
+| Graph Attention Network | Velickovic, P., Cucurull, G., Casanova, A., Romero, A., Lio, P. and Bengio, Y.|  Graph attention networks. | ICLR, 2018 |
+| Relational GCN | Schlichtkrull, M., Kipf, T.N., Bloem, P., Van Den Berg, R., Titov, I. and Welling, M. | Modeling relational data with graph convolutional networks. | The Semantic Web, ESWC 2018 |
+| DistMult | Yang, B., Yih, W., He, X., Gao, J. and Deng, L. | Embedding entities and relations for learning and inference in knowledge bases. | ICLR, 2015 |
+
+Readers can also refer to other GNN models summarized in the review: Zhou, J., Cui, G., Hu, S., Zhang, Z., Yang, C., Liu, Z., Wang, L., Li, C. and Sun, M., 2020. Graph neural networks: A review of methods and applications. AI Open.
+
 ## License
 MIT license
 
