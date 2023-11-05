@@ -3,13 +3,13 @@
 This section pertains to the execution of road network prediction. We forecast the missing road segments within an incomplete road network by employing six distinct models, which include Node2vec, Struc2vec, GraphSage, Sprectral GCN, Relational GCN, and Graph Attention Network. 
 
 ## Directory Structure
-* models: implementation of 6 different road network prediction models
+* models: implementation of the six road network prediction models
 * trainer: code to train road network prediction models
 * tester: code to test road network prediction models
 * utils: code to for data loader and analyzing the best threshold
 * figure1.defg_result: code to visualize the evaluation and comparison of different models
-* shifted_result: Relational GCN models' result on the same cities but the city networks are shifted by a little distance.
-* large_city_network_result: Relational GCN models' result on six cities with larger road network
+* shifted_result: Relational GCN model's result on the same cities where the urban networks are slightly displaced.
+* large_city_network_result: Relational GCN model's result on the six cities with larger road networks (30*30km).
 
 ## Training
 * To train Node2vec + Distmult model
