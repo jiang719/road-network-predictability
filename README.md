@@ -40,12 +40,12 @@ Jiawei Xue, Nan Jiang, Senwei Liang, Qiyuan Pang, Takahiro Yabe, Satish V Ukkusu
 * **intra-city-network-homogeneity**: Conduct link prediction on URNs by utilizing six distinct encoders, including relational GCN, and a decoder known as DistMult, followed by the computation of F1 scores.
 * **road-classification**: Execute URN classification and discover its correlations with F1 scores.
 * **association-analysis**: Perform a correlation analysis between F1 scores and socioeconomic factors as well as network topology metrics.
-* **inter-city-network-homogeneity**: Obtain inter-city homogeneity by training GNN models on city A and subsequently testing them on city B.
+* **inter-city-network-homogeneity**: Obtain inter-city homogeneity by training graph neural network (GNN) models on city A and subsequently testing them on city B.
 
 ## Methods
 a. Description of spatial homogeneity.   
 b. A road network near 40.71798°N, 74.00053°W in New York City. © OpenStreetMap contributors.    
-c. Message-passing mechanism between adjacent layers in the graph neural network (GNN).   
+c. Message-passing mechanism between adjacent layers in the GNN.   
 d. Connecting strength S of a pair of nodes.   
 e. We define the road network spatial homogeneity as the F1 score of the best GNN model with a well-tuned connecting strength threshold δ.    
 
@@ -55,7 +55,7 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
 
 ## Takeaway 1: the similarity between road networks in two cities
 * We compute the spatial homogeneity by training the GNN model on road networks in city A, and testing it on road networks in city B.
-* We ultimately get 30*30=900 F1 scores for the following 30 cities.
+* We ultimately gain 30*30=900 F1 scores for the following 30 cities.
 * Each entry in the following 30*30 matrix represents the directional similarity of road networks in two cities.
 * Please refer to the section [**Transfer learning reveals intercity similarity**](https://www.researchgate.net/publication/348169398_Quantifying_the_Spatial_Homogeneity_of_Urban_Road_Networks_via_Graph_Neural_Networks) in our paper.
   
@@ -88,7 +88,7 @@ with
 | :-----| :-----| :-----| :-----|
 | Node2vec | Grover, A. and Leskovec, J. | node2vec: Scalable feature learning for networks. | SIGKDD, 2016 |
 | Struc2vec | Ribeiro, L.F., Saverese, P.H. and Figueiredo, D.R. | struc2vec: Learning node representations from structural identity. | SIGKDD, 2017 |
-| Spectral GCN | Kipf, T. N. and Welling, M. | Semi-supervised classifcation with graph convolutional networks. | ICLR, 2017 |
+| Spectral GCN | Kipf, T. N. and Welling, M. | Semi-supervised classification with graph convolutional networks. | ICLR, 2017 |
 | GraphSAGE | Hamilton, W. L., Ying, R. and Leskovec, J. |  Inductive representation learning on large graphs. | NIPS, 2017 |
 | Graph Attention Network | Velickovic, P., Cucurull, G., Casanova, A., Romero, A., Lio, P. and Bengio, Y.|  Graph attention networks. | ICLR, 2018 |
 | Relational GCN | Schlichtkrull, M., Kipf, T.N., Bloem, P., Van Den Berg, R., Titov, I. and Welling, M. | Modeling relational data with graph convolutional networks. | The Semantic Web, ESWC 2018 |
