@@ -93,8 +93,7 @@ with
 | Graph Attention Network | Velickovic, P., Cucurull, G., Casanova, A., Romero, A., Lio, P. and Bengio, Y.|  Graph attention networks. | ICLR, 2018 |
 | Relational GCN | Schlichtkrull, M., Kipf, T.N., Bloem, P., Van Den Berg, R., Titov, I. and Welling, M. | Modeling relational data with graph convolutional networks. | The Semantic Web, ESWC 2018 |
 | DistMult | Yang, B., Yih, W., He, X., Gao, J. and Deng, L. | Embedding entities and relations for learning and inference in knowledge bases. | ICLR, 2015 |
-
-Readers can also refer to other GNN models summarized in the review: Zhou, J., Cui, G., Hu, S., Zhang, Z., Yang, C., Liu, Z., Wang, L., Li, C. and Sun, M., 2020. Graph neural networks: A review of methods and applications. AI Open.
+| Review | Zhou, J., Cui, G., Hu, S., Zhang, Z., Yang, C., Liu, Z., Wang, L., Li, C. and Sun, M.| Graph neural networks: A review of methods and applications. | AI Open, 2020 |
 
 ## License
 MIT license
