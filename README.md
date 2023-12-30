@@ -53,7 +53,7 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
   <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/001.png" width="666">
 </p>
 
-## Takeaway 1: the similarity between road networks in two cities
+## Takeaway: the similarity between road networks in two cities
 * We compute the spatial homogeneity by training the GNN model on road networks in city A, and testing it on road networks in city B.
 * We ultimately gain 30*30=900 F1 scores for the following 30 cities.
 * Each entry in the following 30*30 matrix represents the directional similarity of road networks in two cities.
