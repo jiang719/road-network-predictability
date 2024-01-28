@@ -60,7 +60,7 @@ e. We define the road network spatial homogeneity as the F1 score of the best GN
 * Please refer to the section [**Transfer learning reveals intercity similarity**](https://www.researchgate.net/publication/348169398_Quantifying_the_Spatial_Homogeneity_of_Urban_Road_Networks_via_Graph_Neural_Networks) in our paper.
   
 <p align="center">
-  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="666">
+  <img src="https://github.com/jiang719/road-network-predictability/blob/master/main-figure/004_part.png" width="555">
 </p>
 
 * For those interested in applying our homogeneity score in their research across various domains, such as, 
